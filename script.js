@@ -18,3 +18,16 @@ const showHide = _ =>
     readMoreDiv.style.display = "block";
   }
 }
+
+function welcomeUser() {
+  let username = prompt("What's your name?");
+  let welcomeUserDiv = document.getElementById("welcomeuser");
+  welcomeUserDiv.style.display = "block";
+  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! <em> Click this message to hide it </em> </p>';
+  welcomeUserDiv.style.cursor = "pointer";
+}
+
+function hideWelcome() {
+  let welcome = document.getElementById("welcomeuser");
+  welcome.style.display = "none";
+}
