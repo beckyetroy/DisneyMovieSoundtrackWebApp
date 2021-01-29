@@ -7,3 +7,14 @@ console.log('Hello from the Web App Dev 1 lab!');
 function likeIt() {
   alert("Thanks! You're okay too");
 }
+
+const showHide = _ => 
+{
+  let readMoreDiv = document.getElementById("readmore");
+  readMoreDiv.style.color = "green";
+  if (readMoreDiv.style.display === "block") {
+    readMoreDiv.style.display = "none";
+  } else {
+    readMoreDiv.style.display = "block";
+  }
+}
