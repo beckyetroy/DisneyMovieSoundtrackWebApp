@@ -11,11 +11,14 @@ function likeIt() {
 const showHide = _ => 
 {
   let readMoreDiv = document.getElementById("readmore");
+  let arrow = document.getElementById("arrowicon");
   readMoreDiv.style.color = "green";
   if (readMoreDiv.style.display === "block") {
     readMoreDiv.style.display = "none";
+    arrow.className = "arrow circle right icon";
   } else {
     readMoreDiv.style.display = "block";
+    arrow.className = "arrow circle left icon";
   }
 }
 

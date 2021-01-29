@@ -1,37 +1,14 @@
-Welcome to Glitch
+Lab 1
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-### ← README.md
-
-That's this file, where you can tell people what your cool website does and how you built it.
-
-### ← index.html
-
-Where you'll write the content of your website. 
-
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+- Start with hello-website Glitch template
+- Updated index.html to use a Semantic UI grid including segments, texts, buttons, and 
+images
+- Added some extra styles in styles.css
+- Added JavaScript to the 3 buttons
+    - showHide() function to diplay a div with more info
+    - alert() on Like Button
+    - welcomeUser() function to prompt user for their name and display this in a message
+    - hideWelcome() to hide message when clicked
+    - changed showHide() function to change the direction of the arrow icon depending on 
+    whether the message is visible or not
