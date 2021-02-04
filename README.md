@@ -12,4 +12,7 @@ images
     - hideWelcome() to hide message when clicked
     - changed showHide() function to change the direction of the arrow icon depending on 
     whether the message is visible or not
-    - added 
+- Added dashboard.html
+- Added JavaScript for dashboard.html
+    - created object "sonatas" to store playlist and displayed using jQuery
+    - added rating feature with input validation and feedback
