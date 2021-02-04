@@ -12,3 +12,4 @@ images
     - hideWelcome() to hide message when clicked
     - changed showHide() function to change the direction of the arrow icon depending on 
     whether the message is visible or not
+    - added 
