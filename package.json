@@ -1,0 +1,21 @@
+{
+  "name": "playlist-app",
+  "version": "0.0.1",
+  "description": "A little playlist maker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^3.2.1"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
