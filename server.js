@@ -19,10 +19,9 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/index.html");
-});
+// import routes file and use this for routing
+const routes = require('./routes');
+app.use('/', routes);
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 4000, function () {
