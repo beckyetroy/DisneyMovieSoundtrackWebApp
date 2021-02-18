@@ -22,4 +22,4 @@ images
 
 - Created a JSON object to store playlist data
 - Created templates to display the JSON object
-- Removed script.js and sonatas object
+- Removed sonatas object and changed rating function
