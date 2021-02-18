@@ -24,4 +24,4 @@ images
 - Created templates to display the JSON object
 - Removed sonatas object and changed rating function
 - Created a JSON object to store developer data
-- Created templates to display the JSON object
+- Created templates to display the JSON object on the about page

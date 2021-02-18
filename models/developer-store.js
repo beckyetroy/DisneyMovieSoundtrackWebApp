@@ -7,7 +7,7 @@ const developerStore = {
 
   // function to get all of the developers
   getAllDevelopers() {
-    return this.developersCollection;
+    return this.developerCollection;
   },
 
 };
