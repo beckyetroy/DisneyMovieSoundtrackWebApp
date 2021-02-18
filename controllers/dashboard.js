@@ -2,6 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
+const playlistStore = require('../models/playlist-store.js');
 
 // create dashboard object
 const dashboard = {
@@ -15,6 +16,7 @@ const dashboard = {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
       title: 'Playlist App Dashboard',
+      playlists: playlistStore.getAllPlaylists(),
     };
 
     // render the dashboard view and pass through the data

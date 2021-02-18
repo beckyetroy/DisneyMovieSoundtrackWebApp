@@ -19,3 +19,5 @@ images
     
 - Converted to an app that uses node.js
 - Added controller and routes to the back-end
+
+- Created a JSON object with an arraylist of 2 playlists, containing titles and song objects
