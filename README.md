@@ -1,4 +1,4 @@
-Lab 1
+Lab 4
 =================
 
 - Start with hello-website Glitch template
@@ -16,3 +16,6 @@ images
 - Added JavaScript for dashboard.html
     - created object "sonatas" to store playlist and displayed using jQuery
     - added rating feature with input validation and feedback
+    
+- Converted to an app that uses node.js
+- Added controller and routes to the back-end
