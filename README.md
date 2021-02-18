@@ -20,4 +20,6 @@ images
 - Converted to an app that uses node.js
 - Added controller and routes to the back-end
 
-- Created a JSON object with an arraylist of 2 playlists, containing titles and song objects
+- Created a JSON object to store playlist data
+- Created templates to display the JSON object
+- Removed script.js and sonatas object

@@ -1,5 +1,18 @@
 {{> menu id="dashboard"}}
 
-<section class="ui segment" id="tableoutput">
+<section class="ui segment">
+  {{#each playlists}}
+      <h2 class="ui header">
+        {{title}}
+      </h2>
+      {{> listsongs}}
+  {{/each}}
 
+  <p>
+    <span id="rating"> </span>
+  </p>
+
+  <button class="ui blue button" onclick="getRating()">
+    Rate it! <i class="star icon"></i>
+  </button>
 </section>

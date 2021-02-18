@@ -20,6 +20,7 @@ const dashboard = {
     };
 
     // render the dashboard view and pass through the data
+    logger.info('about to render', viewData.playlists);
     response.render('dashboard', viewData);
   },
 };
