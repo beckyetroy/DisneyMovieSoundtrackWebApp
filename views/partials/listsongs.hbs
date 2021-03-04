@@ -3,12 +3,13 @@
     <tr>
       <th>Song</th>
       <th>Artist</th>
-      <th>Duration</th>
       <th>Genre</th>
+      <th>Duration</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
-    {{#each songs}}
+    {{#each playlist.songs}}
       <tr>
         <td>
           {{title}}
@@ -17,10 +18,13 @@
           {{artist}}
         </td>
         <td>
+          {{genre}}
+        </td>
+        <td>
           {{duration}}
         </td>
         <td>
-          {{genre}}
+          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui tiny red button">Delete Song</a>
         </td>
       </tr>
     {{/each}}
