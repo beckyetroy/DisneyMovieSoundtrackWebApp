@@ -23,6 +23,13 @@ const dashboard = {
     logger.info('about to render', viewData.playlists);
     response.render('dashboard', viewData);
   },
+  
+  deletePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
+  },
 };
 
 // export the dashboard module
