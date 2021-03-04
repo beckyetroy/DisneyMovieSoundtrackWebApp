@@ -6,6 +6,8 @@
       {{title}}
     </h2>
     <p> Total Duration: {{duration}} </p>
-    <a href="/playlist/{{id}}"> View </a>
+    <a href="/playlist/{{id}}"><i class = "open folder icon"></i></a>
+    <a href="/playlist/{{../playlist.id}}/deleteplaylist/{{id}}" class="ui tiny red button">Delete Song</a>
+    <a href="/playlist/{{id}}"><i class = "trash icon"></i></a>
   </section>
 {{/each}}
