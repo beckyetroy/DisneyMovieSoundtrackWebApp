@@ -16,7 +16,7 @@ const playlistStore = {
   
   removeSong(id, songId) {
     const playlist = this.getPlaylist(id);
-    // remove the song with id songId from the playlist
+    _.remove(playlist.songs, { id: songId });
   },
 
 };
