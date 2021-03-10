@@ -27,3 +27,4 @@ images
 - Created templates to display the JSON object on the about page
 
 - Implemented 'delete' feature
+- A
