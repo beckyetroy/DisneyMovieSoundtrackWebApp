@@ -27,4 +27,4 @@ images
 - Created templates to display the JSON object on the about page
 
 - Implemented 'delete' feature
-- A
+- Added forms in order to add songs and playlists
