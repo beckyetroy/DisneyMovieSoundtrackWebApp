@@ -1,4 +1,4 @@
-Lab 4
+Lab 6
 =================
 
 - Start with hello-website Glitch template
@@ -25,3 +25,5 @@ images
 - Removed sonatas object and changed rating function
 - Created a JSON object to store developer data
 - Created templates to display the JSON object on the about page
+
+- Implemented 'delete' feature
