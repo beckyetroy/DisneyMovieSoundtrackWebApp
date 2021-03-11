@@ -1,13 +1,15 @@
 'use strict';
 
+const JsonStore = require('./json-store');
+
 const developerStore = {
 
-  // import the developer collection object
-  developerCollection: require('./developer-store.json').developerCollection,
+  store: new JsonStore('./models/developer-store.json', { developerCollection: [] }),
+  collection: 'developerCollection',
 
   // function to get all of the developers
   getAllDevelopers() {
-    return this.developerCollection;
+    return this.store.findAll(this.collection);
   },
 
 };
