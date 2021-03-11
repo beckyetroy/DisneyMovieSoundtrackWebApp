@@ -3,6 +3,8 @@ dependencies:
   express: 4.17.1
   express-handlebars: 3.1.0
   lodash: 4.17.21
+  lowdb: 0.14.0
+  uuid: 3.4.0
   winston: 3.3.3
 packages:
   /@dabh/diagnostics/2.0.2:
@@ -399,6 +401,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+  /is-promise/2.2.2:
+    dev: false
+    resolution:
+      integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
   /is-stream/2.0.0:
     dev: false
     engines:
@@ -409,6 +415,16 @@ packages:
     dev: false
     resolution:
       integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+  /jju/1.4.0:
+    dev: false
+    resolution:
+      integrity: sha1-o6vicYryQaKykE+EpiWXDzia4yo=
+  /json-parse-helpfulerror/1.0.3:
+    dependencies:
+      jju: 1.4.0
+    dev: false
+    resolution:
+      integrity: sha1-E/FM4C7tTpgSl7ZOueO5MuLdE9w=
   /kuler/2.0.0:
     dev: false
     resolution:
@@ -427,6 +443,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-N0qPlqfypFx7UHNn4B3lzS/b0uLqt2hmuoa+PpuXNYgozdJYAyauF5Ky0BWVjrxDlMWiT3qN4zPq3vVAfZy7Yg==
+  /lowdb/0.14.0:
+    dependencies:
+      graceful-fs: 4.2.6
+      is-promise: 2.2.2
+      json-parse-helpfulerror: 1.0.3
+      lodash: 4.17.21
+      steno: 0.4.4
+    dev: false
+    engines:
+      node: '>= 0.12'
+    resolution:
+      integrity: sha1-zOTmr/6GfGzUsZazgtM1m00577U=
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -682,6 +710,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+  /steno/0.4.4:
+    dependencies:
+      graceful-fs: 4.2.6
+    dev: false
+    resolution:
+      integrity: sha1-BxEFvfwobmYVwEA8J+nXtdy4Vcs=
   /string_decoder/1.1.1:
     dependencies:
       safe-buffer: 5.1.2
@@ -741,6 +775,11 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+  /uuid/3.4.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
   /vary/1.1.2:
     dev: false
     engines:
@@ -788,4 +827,6 @@ specifiers:
   express: ^4.17.1
   express-handlebars: ^3.1.0
   lodash: ^4.17.21
+  lowdb: ^0.14.0
+  uuid: ^3.4.0
   winston: ^3.2.1
