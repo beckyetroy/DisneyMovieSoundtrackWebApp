@@ -1,7 +1,7 @@
 /* Adding style to the app */
 
 background {
-  background-image:src(https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F66-669874_wallpaper-linear-gradient-blue-white-mint-cream-pale.jpg?v=1615484323008)
+  background-image: url(https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F66-669874_wallpaper-linear-gradient-blue-white-mint-cream-pale.jpg?v=1615484323008);
 }
 
 body {
