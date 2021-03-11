@@ -36,6 +36,7 @@ const dashboard = {
     const newPlayList = {
       id: uuid(),
       title: request.body.title,
+      duration: request.body.duration,
       songs: [],
     };
     playlistStore.addPlaylist(newPlayList);
