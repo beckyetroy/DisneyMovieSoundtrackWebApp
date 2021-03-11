@@ -9,6 +9,9 @@ const exphbs = require('express-handlebars');
 // initialise project
 const app = express();
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false, }));
+
 // static files output to public folder
 app.use(express.static('public'));
 
@@ -27,7 +30,3 @@ app.use('/', routes);
 const listener = app.listen(process.env.PORT || 4000, function () {
   logger.info(`glitch-playlist1 started on port ${listener.address().port}`);
 });
-
-// read info from form
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false, }));
