@@ -1,7 +1,7 @@
-Lab 6
+Continuous Assessment
 =================
 
-- Start with hello-website Glitch template
+- Started by remixing week7lab6
 - Updated index.html to use a Semantic UI grid including segments, texts, buttons, and 
 images
 - Added some extra styles in styles.css
