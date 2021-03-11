@@ -31,7 +31,7 @@ const playlist = {
     };
     playlistStore.addSong(playlistId, newSong);
     response.redirect('/playlist/' + playlistId);
-  },
+  }
 };
 
 module.exports = playlist;
