@@ -23,10 +23,10 @@ const playlistStore = {
   _.remove(this.playlistCollection, { id: id });
   },
   
-   addSong(id, song) {
+  addSong(id, song) {
     const playlist = this.getPlaylist(id);
     playlist.songs.push(song);
-  },
+  }
 
 };
 
