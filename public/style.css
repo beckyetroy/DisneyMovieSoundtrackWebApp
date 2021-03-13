@@ -1,5 +1,14 @@
 /* Adding style to the app */
 
+
+/*Importing a custom font I downloaded from the following site: https://www.1001fonts.com/walt-disney-fonts.html*/
+/*I learned about the @font-face rule here: https://support.glitch.com/t/using-fonts-types-on-glitch/13936/2*/
+@font-face {
+  font-family: 'DisneyFont';
+  src: url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fwaltograph42.ttf?v=1615659886609');
+       url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fwaltograph42.ttf?v=1615659886609') format('ttf');
+}
+
 body {
   background-image: url("https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FDisney-Wallpaper-Tumblr.jpg?v=1615658218658");
   background-size: cover;
@@ -13,7 +22,8 @@ body {
 }
 
 h1 {
-
+  font-family: "DisneyFont", sans-serif;
+  font-size: 3em;
 }
 
 #readmore {
