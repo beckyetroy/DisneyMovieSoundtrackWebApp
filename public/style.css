@@ -23,6 +23,7 @@ body {
 
 .ui.grid {
   background-color: white;
+  border-radius:20px;
 }
 
 .ui.circular.image {
