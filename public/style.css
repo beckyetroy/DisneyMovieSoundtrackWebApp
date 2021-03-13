@@ -21,6 +21,14 @@ body {
   background-color: #ccccff;
 }
 
+.ui.grid {
+  background-color: white;
+}
+
+.ui.circular.image {
+  max-width: 100px;
+}
+
 h1 {
   font-family: "DisneyFont", sans-serif;
   font-size: 3.5em;
