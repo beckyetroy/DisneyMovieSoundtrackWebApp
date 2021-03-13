@@ -23,7 +23,8 @@ body {
 
 h1 {
   font-family: "DisneyFont", sans-serif;
-  font-size: 3em;
+  font-size: 3.5em;
+  text-align: center;
 }
 
 #readmore {
