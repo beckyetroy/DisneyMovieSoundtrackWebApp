@@ -1,6 +1,13 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
+$('#Left1').mouseover(function() {
+    $('#Left1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F1_p_lNGPNqhHw2pP6G-L1WSA.jpg?v=1615742265801');
+   },
+   function() {
+    $('#Left1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F00-story-little-mermaid.jpg?v=1615742267632');
+   });
+
 function likeIt() {
   alert("Thanks! You're okay too");
 }
