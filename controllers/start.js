@@ -22,5 +22,12 @@ const start = {
   },
 };
 
+$('#Left1').onmouseover(function() {
+    $('#Left2').attr('src', 'images/classTimetable2.jpg');
+   },
+   function() {
+    $('#classTimetable').attr('src', 'images/classTimetable.jpg');
+   });
+
 // export the start module
 module.exports = start;
