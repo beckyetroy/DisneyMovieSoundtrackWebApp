@@ -23,8 +23,8 @@ body {
 }
 
 .ui.grid {
-  background-color: #0066ff;
   border-radius:20px;
+  background-color: #000080;
 }
 
 .ui.square.image {
@@ -42,6 +42,7 @@ h1 {
 
 p {
   font-size: 1.15em;
+  padding: 1.5em;
 }
 
 #readmore {
