@@ -29,6 +29,15 @@ $('#Left3').mouseover(function() {
   }
    });
 
+$('#Left4').mouseover(function() {
+  if ($('#Left4').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001') {
+    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMoanaPortrait.jpg?v=1615742308049');
+  }
+  else {
+    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001');
+  }
+   });
+
 function likeIt() {
   alert("Thanks! You're okay too");
 }
