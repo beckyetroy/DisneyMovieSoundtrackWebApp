@@ -49,10 +49,28 @@ $('#Right1').mouseover(function() {
 
 $('#Right2').mouseover(function() {
   if ($('#Right2').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fmerlin_171654186_e39b9606-bba7-4b82-8706-0d124ed252b7-superJumbo.jpg?v=1615674657499') {
-    $('#Right2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7e379ba43ae0eb40f4053a33db15f0c02f8e3781.jpg?v=1615742266266');
+    $('#Right2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FCinderella.jpg?v=1615742289026');
   }
   else {
     $('#Right2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fmerlin_171654186_e39b9606-bba7-4b82-8706-0d124ed252b7-superJumbo.jpg?v=1615674657499');
+  }
+   });
+
+$('#Right3').mouseover(function() {
+  if ($('#Right3').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fb7902dabddffa9551cf191d151869dd899-14-beauty-and-the-beast.rsquare.w700.jpg?v=1615742288125') {
+    $('#Right3').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FSleeping-Beauty-Featured.jpg?v=1615742328671');
+  }
+  else {
+    $('#Right3').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fb7902dabddffa9551cf191d151869dd899-14-beauty-and-the-beast.rsquare.w700.jpg?v=1615742288125');
+  }
+   });
+
+$('#Right4').mouseover(function() {
+  if ($('#Right4').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036') {
+    $('#Right4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fpocahontas1.jpg?v=1615742319291');
+  }
+  else {
+    $('#Right4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036');
   }
    });
 
