@@ -14,6 +14,7 @@ body {
   background-size: cover;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  color: white;
 }
 
 .ui.menu {
@@ -22,18 +23,25 @@ body {
 }
 
 .ui.grid {
-  background-color: white;
+  background-color: #000039;
   border-radius:20px;
 }
 
-.ui.circular.image {
-  max-width: 100px;
+.ui.square.image {
+  border: 7.5px solid #000099;
 }
 
 h1 {
   font-family: "DisneyFont", sans-serif;
   font-size: 3.5em;
   text-align: center;
+  padding: 0.25em;
+  border: 5px solid #000099;
+  background-color: #000099;
+}
+
+p {
+  font-size: 1.15em;
 }
 
 #readmore {
