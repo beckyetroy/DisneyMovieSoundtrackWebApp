@@ -1,11 +1,32 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
+/*Changes the images on mouseover*/
 $('#Left1').mouseover(function() {
+  if ($('#Left1').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F00-story-little-mermaid.jpg?v=1615742267632') {
     $('#Left1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F1_p_lNGPNqhHw2pP6G-L1WSA.jpg?v=1615742265801');
-   },
-   function() {
+  }
+  else {
     $('#Left1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F00-story-little-mermaid.jpg?v=1615742267632');
+  }
+   });
+
+$('#Left2').mouseover(function() {
+  if ($('#Left2').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Faladdin-2000.jpg?v=1615742280013') {
+    $('#Left2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F44b1d7897dda0a44c97fb7570d6419b39e99a04b.jpg?v=1615742274544');
+  }
+  else {
+    $('#Left2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Faladdin-2000.jpg?v=1615742280013');
+  }
+   });
+
+$('#Left3').mouseover(function() {
+  if ($('#Left3').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001') {
+    $('#Left3').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMoanaPortrait.jpg?v=1615742308049');
+  }
+  else {
+    $('#Left3').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001');
+  }
    });
 
 function likeIt() {
