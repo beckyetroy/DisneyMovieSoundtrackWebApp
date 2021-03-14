@@ -24,11 +24,10 @@ body {
 
 .ui.grid {
   border-radius:20px;
-  background-color: #000080;
 }
 
 .ui.square.image {
-  border: 7.5px solid #000099;
+  border: 7.5px solid #000066;
 }
 
 h1 {
@@ -36,13 +35,17 @@ h1 {
   font-size: 3.5em;
   text-align: center;
   padding: 0.25em;
-  border: 5px solid #000099;
-  background-color: #000099;
+  border: 5px solid #000066;
+  background-color: #000066;
+  border-radius: 10px;
 }
 
 p {
   font-size: 1.15em;
   padding: 1.5em;
+  background-color: #000066;
+  border: 5px solid #000066;
+  border-radius: 10px;
 }
 
 #readmore {
