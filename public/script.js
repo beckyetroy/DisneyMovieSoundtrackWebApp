@@ -30,11 +30,29 @@ $('#Left3').mouseover(function() {
    });
 
 $('#Left4').mouseover(function() {
-  if ($('#Left4').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001') {
-    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMoanaPortrait.jpg?v=1615742308049');
+  if ($('#Left4').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FProfile_-_Lady.jpg?v=1615742601356') {
+    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Flionking-01_a_l.jpg?v=1615742303550');
   }
   else {
-    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-e2-80-a2pixar-s-coco-celebrates-a-host-of-brands-in-far-reaching-promotional-campaign.jpg?v=1615742298001');
+    $('#Left4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FProfile_-_Lady.jpg?v=1615742601356');
+  }
+   });
+
+$('#Right1').mouseover(function() {
+  if ($('#Right1').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F239649989.jpg.gallery.jpg?v=1615674618968') {
+    $('#Right1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7e379ba43ae0eb40f4053a33db15f0c02f8e3781.jpg?v=1615742266266');
+  }
+  else {
+    $('#Right1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F239649989.jpg.gallery.jpg?v=1615674618968');
+  }
+   });
+
+$('#Right2').mouseover(function() {
+  if ($('#Right2').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fmerlin_171654186_e39b9606-bba7-4b82-8706-0d124ed252b7-superJumbo.jpg?v=1615674657499') {
+    $('#Right2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7e379ba43ae0eb40f4053a33db15f0c02f8e3781.jpg?v=1615742266266');
+  }
+  else {
+    $('#Right2').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fmerlin_171654186_e39b9606-bba7-4b82-8706-0d124ed252b7-superJumbo.jpg?v=1615674657499');
   }
    });
 
