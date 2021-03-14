@@ -28,5 +28,6 @@
 - Added forms in order to add songs and playlists
 
 - Updated start page
-  - Changed images, css, and Javascript to suit assignment
+  - Changed images and css to suit assignment
   - Downloaded custom font to use (see css file)
+  - Added Javascript to images to change image when mouse hovers over
