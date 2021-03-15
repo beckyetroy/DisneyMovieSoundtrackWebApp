@@ -8,18 +8,18 @@ const router = express.Router();
 const start = require('./controllers/start.js');
 const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
-const playlist = require('./controllers/playlist.js');
+const movie = require('./controllers/movie.js');
 
 // connect routes to controllers
 router.get('/', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
-router.get('/playlist/:id', playlist.index);
-router.get('/playlist/:id/deleteSong/:songid', playlist.deleteSong);
-router.get('/dashboard/:id/deletePlaylist', dashboard.deletePlaylist);
+router.get('/movie/:id', movie.index);
+router.get('/movie/:id/deleteTrack/:trackid', movie.deleteTrack);
+router.get('/dashboard/:id/deleteMovie', dashboard.deleteMovie);
 
-router.post('/playlist/:id/addsong', playlist.addSong);
-router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+router.post('/movie/:id/addtrack', movie.addTrack);
+router.post('/dashboard/addmovie', dashboard.addMovie);
 
 // export router module
 module.exports = router;

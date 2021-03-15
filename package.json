@@ -1,7 +1,7 @@
 {
-  "name": "playlist-app",
+  "name": "disney-soundtracks-app",
   "version": "0.0.1",
-  "description": "A little playlist maker",
+  "description": "Creating a place to store all the soundtracks to the Disney movies",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

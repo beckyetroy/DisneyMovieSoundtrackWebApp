@@ -2,7 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
-const playlistStore = require('../models/playlist-store.js');
+const movieStore = require('../models/movie-store.js');
 const uuid = require('uuid');
 
 // create dashboard object
@@ -16,30 +16,30 @@ const dashboard = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
-      playlists: playlistStore.getAllPlaylists(),
+      title: 'Disney Soundtracks App Dashboard',
+      movies: movieStore.getAllMovies(),
     };
 
     // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.playlists);
+    logger.info('about to render', viewData.movies);
     response.render('dashboard', viewData);
   },
   
-  deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
+  deleteMovie(request, response) {
+    const movieId = request.params.id;
+    logger.debug(`Deleting Movie ${movieId}`);
+    movieStore.removeMovie(movieId);
     response.redirect('/dashboard');
   },
   
-  addPlaylist(request, response) {
-    const newPlayList = {
+  addMovie(request, response) {
+    const newMovie = {
       id: uuid(),
       title: request.body.title,
       duration: request.body.duration,
-      songs: [],
+      tracks: [],
     };
-    playlistStore.addPlaylist(newPlayList);
+    movieStore.addMovie(newMovie);
     response.redirect('/dashboard');
   },
 };

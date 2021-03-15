@@ -1,41 +1,41 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const playlistStore = require('../models/movie-store');
+const movieStore = require('../models/movie-store');
 const uuid = require('uuid');
 
-const playlist = {
+const movie = {
   index(request, response) {
-    const playlistId = request.params.id;
-    logger.debug('Playlist id = ' + playlistId);
+    const movieId = request.params.id;
+    logger.debug('Movie id = ' + movieId);
     const viewData = {
-      title: 'Playlist',
-      playlist: playlistStore.getPlaylist(playlistId),
+      title: 'Movie',
+      movie: movieStore.getMovie(movieId),
     };
-    response.render('playlist', viewData);
+    response.render('movie', viewData);
   },
   
-  deleteSong(request, response) {
-    const playlistId = request.params.id;
-    const songId = request.params.songid;
-    logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
-    playlistStore.removeSong(playlistId, songId);
-    response.redirect('/playlist/' + playlistId);
+  deleteTrack(request, response) {
+    const movieId = request.params.id;
+    const trackId = request.params.trackid;
+    logger.debug(`Deleting Track ${trackId} from Movie ${movieId}`);
+    movieStore.removeTrack(movieId, trackId);
+    response.redirect('/movie/' + movieId);
   },
   
-  addSong(request, response) {
-    const playlistId = request.params.id;
-    const playlist = playlistStore.getPlaylist(playlistId);
-    const newSong = {
+  addTrack(request, response) {
+    const movieId = request.params.id;
+    const movie = movieStore.getMovie(movieId);
+    const newTrack = {
       id: uuid(),
       title: request.body.title,
       artist: request.body.artist,
       genre: request.body.genre,
       duration: request.body.duration
     };
-    playlistStore.addSong(playlistId, newSong);
-    response.redirect('/playlist/' + playlistId);
+    movieStore.addTrack(movieId, newTrack);
+    response.redirect('/movie/' + movieId);
   }
 };
 
-module.exports = playlist;
+module.exports = movie;
