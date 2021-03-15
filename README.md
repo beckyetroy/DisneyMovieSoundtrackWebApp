@@ -31,3 +31,12 @@
   - Changed images and css to suit assignment
   - Downloaded custom font to use (see css file)
   - Added Javascript to images to change image when mouse hovers over
+  - Changed cursor when mouse hovered over images
+  - Changed buttons
+    - 'Get Started' button displays hidden instructions directing user to dashboard link
+    - 'Send us your Feedback' button allows user to input a message, which is then read back to the user in a hidden paragraph
+    - Feedback Paragraph can be hidden again by clicking it. Tooltip informs user of this.
+
+- Updated all parameters to suit assignment
+  - Changed all mention of 'playlist' to 'movie'
+  - Changed all mention of 'song' to 'track'
