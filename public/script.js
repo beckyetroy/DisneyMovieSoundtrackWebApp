@@ -95,6 +95,11 @@ function feedback() {
   feedback.style.cursor = "pointer";
 }
 
+function displayTooltip() {
+  let tooltip = document.getElementById("tooltiptext");
+  tooltip.style.visibility = "visible";
+}
+
 function hideFeedback() {
   let feedback = document.getElementById("feedback");
   feedback.style.display = "none";
