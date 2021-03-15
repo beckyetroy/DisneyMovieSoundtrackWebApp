@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const playlistStore = require('../models/playlist-store');
+const playlistStore = require('../models/movie-store');
 const uuid = require('uuid');
 
 const playlist = {
