@@ -14,7 +14,6 @@ body {
   background-size: cover;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
-  color: white;
 }
 
 .ui.menu {
@@ -38,6 +37,7 @@ h1 {
   border: 5px solid #000066;
   background-color: #000066;
   border-radius: 10px;
+  color: white;
 }
 
 p {
@@ -47,10 +47,12 @@ p {
   background-color: #000066;
   border: 5px solid #000066;
   border-radius: 10px;
+  color: white;
 }
 
 #readmore {
   display: none;
+  color: #ffd633;
 }
 
 .ui.
