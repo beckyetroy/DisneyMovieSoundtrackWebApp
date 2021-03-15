@@ -55,8 +55,12 @@ p {
   color: #ffd633;
 }
 
-.ui.
-
-#welcomeuser {
+#feedback {
   display: none;
+  font-size: 0.85em;
+  padding: 0em;
+}
+
+#quote {
+  font-size: 0.8em;
 }

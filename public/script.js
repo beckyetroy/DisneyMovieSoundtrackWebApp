@@ -88,14 +88,14 @@ const showHide = _ =>
 }
 
 function feedback() {
-  let username = prompt("Let us know what you think!");
+  let response = prompt("Let us know what you think!");
   let feedback = document.getElementById("feedback");
   feedback.style.display = "block";
-  document.getElementById('feedback').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! <em> Click this message to hide it </em> </p>';
-  welcomeUserDiv.style.cursor = "pointer";
+  document.getElementById('feedback').innerHTML = '<p> Thanks for your feedback! We appreciate any criticisms or suggestions from our users. <br><br> <span id = "quote">(You wrote: <i> ' + response + ' </i>) </span></p>';
+  feedback.style.cursor = "pointer";
 }
 
-function hideWelcome() {
+function hideFeedback() {
   let welcome = document.getElementById("welcomeuser");
   welcome.style.display = "none";
 }
