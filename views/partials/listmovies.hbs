@@ -1,7 +1,10 @@
 <h1>Disney Movies</h1>
 {{#each movies}}
-  <section class="ui segment">
-    <div class = "ui sixteen wide stackable column">
+  <section class="ui grid">
+    <div class = "ui two wide stackable column">
+      <img src = {{image}} class = "movieThumbnail">
+    </div>
+    <div class = "ui fourteen wide column">
     <h2 class="ui header">
       {{title}}
     </h2>
@@ -9,5 +12,5 @@
     <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
     <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a>
     </div>
-  </section>
+  </grid>
 {{/each}}

@@ -73,6 +73,6 @@ p {
   font-size: 0.825em;
 }
 
-.ui.segment {
-
+.movie.thumbnail {
+  max-width:250px;
 }
