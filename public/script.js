@@ -80,14 +80,13 @@ function likeIt() {
 
 const showHide = _ => 
 {
-  let readMoreDiv = document.getElementById("readmore");
+  let readMoreP = document.getElementById("readmore");
   let arrow = document.getElementById("arrowicon");
-  readMoreDiv.style.color = "green";
-  if (readMoreDiv.style.display === "block") {
-    readMoreDiv.style.display = "none";
+  if (readMoreP.style.display === "block") {
+    readMoreP.style.display = "none";
     arrow.className = "arrow circle down icon";
   } else {
-    readMoreDiv.style.display = "block";
+    readMoreP.style.display = "block";
     arrow.className = "arrow circle up icon";
   }
 }
