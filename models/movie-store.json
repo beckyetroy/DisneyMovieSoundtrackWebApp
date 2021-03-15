@@ -2,41 +2,7 @@
   "movieCollection": [
     {
       "id": "01",
-      "title": "Aladdin",
-      "year": 1992,
-      "songs": [
-        {
-          "id": "04",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 5
-        },
-        {
-          "id": "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 6
-        },
-        {
-          "id": "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 4
-        },
-        {
-          "id": "b87895fd-841e-49b7-88b7-70878dd940e1",
-          "title": "Piano Sonata No.5",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": "5"
-        }
-      ]
-    },
-    {
-      "id": "02",
+      "image": "",
       "title": "Beauty and the Beast",
       "duration": 23,
       "songs": [
@@ -60,6 +26,44 @@
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 4
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Aladdin",
+      "year": 1992,
+      "director": "John Musker and Ryan Clements",
+      "imdb": "https://www.imdb.com/title/tt0103639/",
+      "songs": [
+        {
+          "id": "04",
+          "title": "A Whole New World",
+          "composer": "Alan Menken",
+          "singer": "Lea Salonga and Brad Kane",
+          "genre": "Pop",
+          "duration": 5
+        },
+        {
+          "id": "05",
+          "title": "Piano Sonata No. 7",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 6
+        },
+        {
+          "id": "06",
+          "title": "Piano Sonata No. 10",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 4
+        },
+        {
+          "id": "b87895fd-841e-49b7-88b7-70878dd940e1",
+          "title": "Piano Sonata No.5",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": "5"
         }
       ]
     },
