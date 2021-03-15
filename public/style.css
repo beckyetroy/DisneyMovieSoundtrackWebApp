@@ -27,6 +27,7 @@ body {
 
 .ui.square.image {
   border: 8.5px solid #000066;
+  cursor: url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fdisney-clipart-pixie-dust-2%20-%20Copy.png?v=1615834411275', auto);
 }
 
 h1 {
@@ -48,6 +49,10 @@ p {
   border: 5px solid #000066;
   border-radius: 10px;
   color: white;
+}
+
+.buttons {
+  text-align: center;
 }
 
 #readmore {
