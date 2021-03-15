@@ -1,14 +1,17 @@
 <h1>Disney Movies</h1>
 {{#each movies}}
   <section class="ui grid">
-    <div class = "ui two wide stackable column">
-      <img src = {{image}} class = "movieThumbnail">
+    <div class = "ui three wide stackable column">
+      <img src = {{image}} class = "ui square image">
     </div>
-    <div class = "ui fourteen wide column">
+    <div class = "ui thirteen wide column">
     <h2 class="ui header">
       {{title}}
     </h2>
-    <p> Total Duration: {{duration}} </p>
+      <p> Year: {{year}} 
+      <br>
+      Directed by : {{director}}
+      </p>
     <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
     <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a>
     </div>
