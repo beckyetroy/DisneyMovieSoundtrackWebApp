@@ -74,10 +74,6 @@ $('#Right4').mouseover(function() {
   }
    });
 
-function likeIt() {
-  alert("Thanks! You're okay too");
-}
-
 const showHide = _ => 
 {
   let readMoreP = document.getElementById("readmore");
@@ -91,11 +87,11 @@ const showHide = _ =>
   }
 }
 
-function welcomeUser() {
-  let username = prompt("What's your name?");
-  let welcomeUserDiv = document.getElementById("welcomeuser");
-  welcomeUserDiv.style.display = "block";
-  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! <em> Click this message to hide it </em> </p>';
+function feedback() {
+  let username = prompt("Let us know what you think!");
+  let feedback = document.getElementById("feedback");
+  feedback.style.display = "block";
+  document.getElementById('feedback').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! <em> Click this message to hide it </em> </p>';
   welcomeUserDiv.style.cursor = "pointer";
 }
 
