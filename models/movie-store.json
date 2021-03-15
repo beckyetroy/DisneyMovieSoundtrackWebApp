@@ -2,8 +2,8 @@
   "movieCollection": [
     {
       "id": "01",
-      "title": "Beethoven Sonatas",
-      "duration": 35,
+      "title": "Aladdin",
+      "year": 1992,
       "songs": [
         {
           "id": "04",
@@ -37,7 +37,7 @@
     },
     {
       "id": "02",
-      "title": "Beethoven Concertos",
+      "title": "Beauty and the Beast",
       "duration": 23,
       "songs": [
         {
@@ -65,7 +65,7 @@
     },
     {
       "id": "03",
-      "title": "Beethoven Variations",
+      "title": "The Lion King",
       "duration": 67,
       "songs": [
         {

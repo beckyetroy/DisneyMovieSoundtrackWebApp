@@ -1,10 +1,13 @@
+<h1>Disney Movies</h1>
 {{#each movies}}
   <section class="ui segment">
+    <div class = "ui sixteen wide stackable column">
     <h2 class="ui header">
       {{title}}
     </h2>
     <p> Total Duration: {{duration}} </p>
     <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
     <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a>
+    </div>
   </section>
 {{/each}}
