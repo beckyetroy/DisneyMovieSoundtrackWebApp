@@ -96,8 +96,8 @@ function feedback() {
 }
 
 function hideFeedback() {
-  let welcome = document.getElementById("welcomeuser");
-  welcome.style.display = "none";
+  let feedback = document.getElementById("feedback");
+  feedback.style.display = "none";
 }
 
 function getRating() {
