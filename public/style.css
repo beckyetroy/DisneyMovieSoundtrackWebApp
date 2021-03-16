@@ -48,7 +48,7 @@ p {
   font-size: 1.15em;
   text-align: justify;
   padding: 1.5em;
-  background-color: #000066;
+  background-color: #004d99;
   border: 5px solid #000066;
   border-radius: 10px;
   color: white;
@@ -75,8 +75,4 @@ p {
 
 #songs {
   background: rgb(255, 255, 255, 0.5);
-}
-
-h2 {
-  
 }
