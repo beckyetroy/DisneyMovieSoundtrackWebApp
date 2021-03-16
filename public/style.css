@@ -76,3 +76,10 @@ p {
 #songs {
   background: rgb(255, 255, 255, 0.5);
 }
+
+.ui.card {
+  max-width: 100%;
+  border-radius: 25px;
+  padding: 2em;
+  background-color: #004d99;
+}
