@@ -1,15 +1,33 @@
-{{#each movies}}
-    <div class = "ui three wide stackable column">
-      <img src = {{image}} class = "ui square image">
+<div class="ui card">
+    <div class="content">
+    <div class="ui items">
+      {{#each movies}}
+            <div class="item">
+                <div class="ui square image">
+                    <img src={{image}}>
+                </div>
+                <div class="content">
+                    <h2 class = "ui header">{{title}}</h2>
+                    <div class="description">
+                    <p>
+                      Year: {{year}} 
+                      <br>
+                      Directed by : {{director}}
+                      <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
+                      <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a></p>
+                    </div>
+                    <div class="extra">
+                        <div class="ui label">IMAX</div>
+                        <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class = "ui thirteen wide column">
-    <h2 class="ui header">
-      {{title}}
-    </h2>
-     Year: {{year}} 
-      <br>
-      Directed by : {{director}}
-    <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
-    <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a>
+    <div class="extra content">
+        <a>
+            More Info
+        </a>
     </div>
 {{/each}}
+  </div>
