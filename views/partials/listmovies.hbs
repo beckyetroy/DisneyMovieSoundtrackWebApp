@@ -14,14 +14,16 @@
                         Directed by : {{director}}
                         <br>
                       <div class="buttons">
-                        <button class="ui blue button" onclick="showHide()">
-          Soundtrack <i class="arrow circle down icon" id ="arrowicon"></i>
-        </button>
-        
-        <button class="ui pink button" onclick="feedback()">
-        Remove Movie<i class="comment icon"></i>
-        </button>
-                        <a href="/movie/{{id}}"><i class = "open folder icon"></i></a>
+                        <a href="/movie/{{id}}">
+                        <button class="ui blue button">
+                          Soundtrack <i class="music icon"></i>
+                        </button></a>
+                        
+                        <a href="/dashboard/{{id}}/deletemovie">        
+                        <button class="ui red button"">
+                          Remove Movie<i class="comment icon"></i>
+                        </button></a>
+                      </div>
                         <a href="/dashboard/{{id}}/deletemovie"> <i class = "trash icon delmovie"></i></a>
                     </div>
                 </div>
