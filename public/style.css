@@ -87,7 +87,7 @@ p {
   max-width: 100%;
   border-radius: 25px;
   padding: 2em;
-  background-color: #dab3ff;
+  background-color: #e6ccff;
 }
 
 #movieBtns {
@@ -98,4 +98,15 @@ h2 {
   font-family: 'FilmFont', sans-serif;
   font-weight: bold;
   font-size: 2.25em;
+}
+
+.imdb {
+  color: black;
+  border: 3px solid yellow;
+  background: yellow;
+  font-weight: bold;
+}
+
+.imdb:hover {
+  color: pink;
 }

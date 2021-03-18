@@ -80,8 +80,11 @@
     },
     {
       "id": "03",
+      "image" : "https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fscale.jpg?v=1616103671696",
       "title": "The Lion King",
-      "duration": 67,
+      "year": 1994,
+      "director": "Roger Allers and Rob Minkoff",
+      "imdb": "https://www.imdb.com/title/tt0110357/",
       "songs": [
         {
           "id": "10",
