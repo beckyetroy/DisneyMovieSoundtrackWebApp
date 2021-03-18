@@ -1,12 +1,18 @@
 /* Adding style to the app */
 
-
 /*Importing a custom font I downloaded from the following site: https://www.1001fonts.com/walt-disney-fonts.html*/
 /*I learned about the @font-face rule here: https://support.glitch.com/t/using-fonts-types-on-glitch/13936/2*/
 @font-face {
   font-family: 'DisneyFont';
   src: url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fwaltograph42.ttf?v=1615659886609');
        url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fwaltograph42.ttf?v=1615659886609') format('ttf');
+}
+
+/*Importing a custom font I downloaded from the following site: https://www.fontspace.com/beautyofthebeast-font-f30665*/
+@font-face {
+  font-family: 'FilmFont';
+  src: url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FBeautyofthebeast-1VpM.ttf?v=1616102834222');
+       url('https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FBeautyofthebeast-1VpM.ttf?v=1616102834222') format('ttf');
 }
 
 body {
@@ -81,9 +87,15 @@ p {
   max-width: 100%;
   border-radius: 25px;
   padding: 2em;
-  background-color: #cccccc;
+  background-color: #dab3ff;
 }
 
 #movieBtns {
   text-align:left;
+}
+
+h2 {
+  font-family: 'FilmFont', sans-serif;
+  font-weight: bold;
+  font-size: 2.25em;
 }
