@@ -84,7 +84,6 @@ p {
 }
 
 .ui.card {
-  max-width: 100%;
   border-radius: 25px;
   padding: 2em;
   background-color: #e6ccff;
@@ -102,11 +101,12 @@ h2 {
 
 .imdb {
   color: black;
-  border: 3px solid yellow;
-  background: yellow;
+  border: 2.5px solid #ffcc00;
+  border-radius: 15%;
+  background: #ffcc00;
   font-weight: bold;
 }
 
 .imdb:hover {
-  color: pink;
+  color: #997a00;
 }
