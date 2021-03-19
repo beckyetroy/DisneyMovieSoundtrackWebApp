@@ -116,8 +116,3 @@ function getRating() {
 $(".delsong").click(() => confirm('Really delete this song?'))
 
 $(".delplaylist").click(() => confirm('Really delete this playlist?'))
-
-var loadFile = function(event) {
-	var uploadedImage = document.createElement('img');
-	uploadedImage.src = URL.createObjectURL(event.target.files[0]);
-};
