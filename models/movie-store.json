@@ -7,10 +7,10 @@
       "year": 1991,
       "director": "Gary Trousdale and Kirk Wise",
       "imdb": "https://www.imdb.com/title/tt0101414/",
-      "songs": [
+      "tracks": [
         {
           "id": "04",
-          "title": "A Whole New World",
+          "title": "Tale as Old as Time",
           "composer": "Alan Menken",
           "singer": "Lea Salonga and Brad Kane",
           "genre": "Pop",
@@ -46,7 +46,7 @@
       "year": 1992,
       "director": "John Musker and Ryan Clements",
       "imdb": "https://www.imdb.com/title/tt0103639/",
-      "songs": [
+      "tracks": [
         {
           "id": "04",
           "title": "A Whole New World",
@@ -85,7 +85,7 @@
       "year": 1994,
       "director": "Roger Allers and Rob Minkoff",
       "imdb": "https://www.imdb.com/title/tt0110357/",
-      "songs": [
+      "tracks": [
         {
           "id": "10",
           "title": "Opus 34: Six variations on a theme in F major",
