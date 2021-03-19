@@ -79,15 +79,6 @@
           "duration": 45
         }
       ]
-    },
-    {
-      "id": "f34fbe0f-fa42-4642-b5f3-ecf2d8f77dca",
-      "image": "7e379ba43ae0eb40f4053a33db15f0c02f8e3781.jpg",
-      "title": "The Hunchback of Notre Dame",
-      "year": "1996",
-      "director": "Gary Trousdale and Kirk Wise",
-      "imdb": "\"image\": \"https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fb7902dabddffa9551cf191d151869dd899-14-beauty-and-the-beast.rsquare.w700.jpg?v=1615742288125\",       \"title\": \"Beauty and the Beast\",       \"year\": 1991,       \"director\": \"Gary Trousdale and Kirk Wise\",       \"imdb\": \"https://www.imdb.com/title/tt0101414/\",",
-      "tracks": []
     }
   ]
 }
