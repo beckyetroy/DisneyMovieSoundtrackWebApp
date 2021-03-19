@@ -2,13 +2,13 @@
   <div class="four fields">
     <div class="field">
       <label for="title">Song Title</label>
-      <input type="text" name="title" autofocus required title = "Please include a valid Title"
+      <input type="text" name="title" required title = "Please include a valid Title"
       placeholder="Title">
     </div>
     <div class="field">
-      <label for="artist">Artist</label>
-      <input type="text" name="artist" required title = "Please include a valid Artist"
-      placeholder="Artist"  >
+      <label for="singer">Singer(s)</label>
+      <input type="text" name="singer" required title = "Please include a valid Singer or 'Misc'."
+      placeholder="Singer"  >
     </div>
     <div class="field">
       <label for="genre">Genre</label>
@@ -18,10 +18,10 @@
         <option value="Pop">Pop</option>
       </select>
     </div>
-    <div class="field">
-      <label for="duration">Duration</label>
-      <input type="text" name="duration" required title = "Please include a valid Duration"
-      placeholder="Duration"  >
+    <div class ="field">
+      <label for="audio">(Optional) Audio File:</label>
+        <input type="file" id="audio" name="audio" accept="audio/*">
+        <input type="submit">
     </div>
   </div>
   <button class="ui blue submit button">Add Track</button>

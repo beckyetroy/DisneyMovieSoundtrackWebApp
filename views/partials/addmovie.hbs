@@ -1,12 +1,24 @@
 <form class="ui stacked segment form" action="/dashboard/addmovie" method="POST">
-  <div class="two fields">
+  <div class="five fields">
   <div class = "field">
     <label>Title</label>
-    <input placeholder="Title" type="text" name="title" required>
+    <input placeholder="Title" type="text" name="title" required title = "Please include the Movie Title">
   </div>
   <div class="field">
-    <label>Duration</label>
-    <input placeholder="Total Duration" type="text" name="duration" required>
+    <label>Link to IMDb</label>
+    <input placeholder="IMDb" type="text" name="imdb">
+  </div>
+  <div class="field">
+    <label>Year</label>
+    <input placeholder="Year of Release" type="text" name="year">
+  </div>
+  <div class="field">
+    <label>Director(s)</label>
+    <input placeholder="director" type="text" name="director" required title = "Please include the director(s) of the movie.">
+  </div>
+  <div class="field">
+    <label>Link to IMDb</label>
+    <input placeholder="IMDb" type="text" name="imdb">
   </div>
   </div>
   <button class="ui blue submit button">Add Movie</button>
