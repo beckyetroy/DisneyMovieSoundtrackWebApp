@@ -2,7 +2,7 @@
   <div class="five fields">
   <div class = "field">
     <label>Title</label>
-    <input placeholder="Title" type="text" name="title" required title = "Please include the Movie Title">
+    <input placeholder="Title" type="text" name="title" required required oninvalid="this.setCustomValidity('Please enter the Movie Title')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label>Link to IMDb</label>
@@ -10,11 +10,11 @@
   </div>
   <div class="field">
     <label>Year</label>
-    <input placeholder="Year of Release" type="text" name="year">
+    <input placeholder="Year of Release" type="text" name="year" required oninvalid="this.setCustomValidity('Please enter the Year of Release')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label>Director(s)</label>
-    <input placeholder="Director" type="text" name="director" required title = "Please include the director(s) of the movie.">
+    <input placeholder="Director" type="text" name="director" required oninvalid="this.setCustomValidity('Please enter Director(s)')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label for="audio">(Optional) Image:</label>
