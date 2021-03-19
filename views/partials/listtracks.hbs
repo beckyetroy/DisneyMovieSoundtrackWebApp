@@ -2,9 +2,9 @@
   <thead>
     <tr>
       <th>Song</th>
-      <th>Artist</th>
-      <th>Genre</th>
       <th>Sung by</th>
+      <th>Genre</th>
+      <th>Play now</th>
       <th> </th>
     </tr>
   </thead>
@@ -21,6 +21,7 @@
           {{genre}}
         </td>
         <td>
+          {{!-- Code for audio gotten from W3Schools: https://www.w3schools.com/html/html5_audio.asp --}}
           <audio controls>
             <source src={{audio}} type="audio/mpeg">
             Your browser does not support the audio element.
