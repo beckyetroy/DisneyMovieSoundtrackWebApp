@@ -11,10 +11,9 @@
         {
           "id": "04",
           "title": "Tale as Old as Time",
-          "composer": "Alan Menken",
-          "singer": "Lea Salonga and Brad Kane",
-          "genre": "Pop",
-          "duration": 5
+          "singer": "Angela Lansbury",
+          "genre": "Show tune",
+          "audio": "https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FBeauty%20and%20The%20BeastTale%20As%20Old%20As%20Time%20Lyrics%20-%20Beauty%20and%20the%20Beast.mp3?v=1616163451270"
         },
         {
           "id": "05",

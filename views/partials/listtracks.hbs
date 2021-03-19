@@ -4,7 +4,7 @@
       <th>Song</th>
       <th>Artist</th>
       <th>Genre</th>
-      <th>Duration</th>
+      <th>Sung by</th>
       <th> </th>
     </tr>
   </thead>
@@ -15,13 +15,16 @@
           {{title}}
         </td>
         <td>
-          {{artist}}
+          {{singer}}
         </td>
         <td>
           {{genre}}
         </td>
         <td>
-          {{duration}}
+          <audio controls>
+            <source src={{audio}} type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         </td>
         <td>
           <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button"> <i class="icon trash"></i></a>
