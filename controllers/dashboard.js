@@ -35,7 +35,7 @@ const dashboard = {
   addMovie(request, response) {
     const newMovie = {
       id: uuid(),
-      image: request.body.url,
+      image: request.body.image.label,
       title: request.body.title,
       year: request.body.year,
       director: request.body.director,

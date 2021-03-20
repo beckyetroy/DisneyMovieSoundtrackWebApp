@@ -118,7 +118,7 @@ label img {
 label img:hover {
   border: 2.5px solid blue;
 }
+
 input[type="radio"]:checked + label {
-  border: 2.5px solid green;
-  
+  border: 4px solid green;
 }

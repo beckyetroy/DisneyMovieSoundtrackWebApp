@@ -109,6 +109,14 @@
       "director": "Gary Trousdale and Kirk Wise",
       "imdb": "https://www.imdb.com/title/tt0116583/",
       "tracks": []
+    },
+    {
+      "id": "20c7667c-b4de-4dac-98ab-e4c9ddcaa321",
+      "title": "New Playlist",
+      "year": "gvb",
+      "director": "Gary Trousdale and Kirk Wise",
+      "imdb": "\"image\": \"https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fb7902dabddffa9551cf191d151869dd899-14-beauty-and-the-beast.rsquare.w700.jpg?v=1615742288125\",       \"title\": \"Beauty and the Beast\",       \"year\": 1991,       \"director\": \"Gary Trousdale and Kirk Wise\",       \"imdb\": \"https://www.imdb.com/title/tt0101414/\",",
+      "tracks": []
     }
   ]
 }
