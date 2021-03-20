@@ -130,3 +130,7 @@ input[type="radio"]:checked + label {
 form {
   width: 100%;
 }
+
+label {
+  color: white;
+}
