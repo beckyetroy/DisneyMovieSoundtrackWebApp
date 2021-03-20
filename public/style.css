@@ -110,3 +110,7 @@ h2 {
 .imdb:hover {
   color: #997a00;
 }
+
+#output {
+  display: none;
+}

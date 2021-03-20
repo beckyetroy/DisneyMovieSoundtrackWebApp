@@ -18,7 +18,15 @@
   </div>
   <div class="field">
     <label for="image">(Optional) Image:</label>
-        <input type="file" id="image" name="image" accept="image/*">
+        <input type="file" id="image" name="image" accept="image/*" onchange="loadFile(event)">
+<p id="output" width="200" name = "output"/></p>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image = URL.createObjectURL(event.target.files[0]);
+};
+</script>
   </div>
   </div>
   <button class="ui blue submit button">Add Movie</button>
