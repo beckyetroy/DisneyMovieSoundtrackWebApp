@@ -135,11 +135,20 @@ h3 {
 
 .div.form {
   background-color: white;
+  border-radius:5px;
   width: 98%;
-  padding: 1.5em;
+  padding: 1em;
   margin-left: 1%;
 }
 
 .ui.stacked.segment.form label {
   color: white;
+}
+
+.btn.div {
+  text-align: center;
+}
+
+.ui.inverted.violet.submit.button {
+  padding-left: 1em;
 }
