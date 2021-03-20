@@ -19,13 +19,12 @@
   <div class="field">
     <label for="image">(Optional) Image:</label>
         <input type="file" id="image" name="image" accept="image/*" onchange="loadFile(event)">
-    <input type = "text" id ="url" name="url">
-<p><img id="output" width="200" name ="output"/></p>
+    <input type="text" id="url" name="url">
 
 <script>
 var loadFile = function(event) {
 	var imageUrl = document.getElementById('url');
-	imageUrl.value(URL.createObjectURL(event.target.files[0]));
+	imageUrl.value = (URL.createObjectURL(event.target.files[0]));
 };
 </script>
   </div>
