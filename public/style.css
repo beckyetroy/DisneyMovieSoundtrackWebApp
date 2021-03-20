@@ -127,10 +127,16 @@ input[type="radio"]:checked + label {
   display: none;
 }
 
-form {
-  width: 100%;
+h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
-label {
+form {
+  width: 100%;
+  padding: 1.5em;
+}
+
+.ui.stacked.segment.form label {
   color: white;
 }
