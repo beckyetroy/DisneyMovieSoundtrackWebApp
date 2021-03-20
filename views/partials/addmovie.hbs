@@ -19,20 +19,28 @@
     <label>Director(s)</label>
     <input placeholder="Director" type="text" name="director" required oninvalid="this.setCustomValidity('Please enter Director(s)')" oninput="this.setCustomValidity('')">
   </div>
-    <div class="field" id = "imageField">
+    <div class = "field">
       <label>Choose an image:</label>
-    <input type="radio" name="image" class="sr-only" id="mickey">
+    <div class="three fields">
+      <div class = "field">
+    <input type="radio" name="image" class="sr-only" id="mickey" checked="checked">
       <label for="mickey">
-    <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fclipart-mouse-silhouette-18.png?v=1616263011174" alt="Mickey Mouse" class = "ui tiny image">
+    <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fclipart-mouse-silhouette-18.png?v=1616265337510" alt="Mickey Mouse" class = "ui tiny image">
       </label>
+        </div>
+      <div class = "field">
   <input type="radio" name="image" class="sr-only" id="animals">
       <label for="animals">
     <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7bd652220d1b17df2be9e6fea200c292.jpg?v=1616263751463" alt="Animals" class = "ui tiny image">
       </label>
+        </div>
+      <div class = "field">
       <input type="radio" name="image" class="sr-only" id="princesses">
       <label for="princesses">
     <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fifxfw2x2-720.jpg?v=1616263759177" alt="Animals" class = "ui tiny image">
       </label>
+        </div>
+      </div>
   </div>
   </div>
   <button class="ui blue submit button">Add Movie</button>
