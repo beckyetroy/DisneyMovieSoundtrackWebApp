@@ -10,7 +10,7 @@
   </div>
   <div class="field">
     <label>Year</label>
-    <input placeholder="Year of Release" type="text" name="year" required oninvalid="this.setCustomValidity('Please enter the Year of Release')" oninput="this.setCustomValidity('')">
+    <input placeholder="Year of Release" type="text" name="year" pattern="[0-9]{4,}" required oninvalid="this.setCustomValidity('Please enter a valid Year of Release')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label>Director(s)</label>
