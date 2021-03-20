@@ -116,11 +116,3 @@ function getRating() {
 $(".deltrack").click(() => confirm('Are you sure you want to remove this track?'))
 
 $(".delmovie").click(() => confirm('Are you sure you want to remove this movie?'))
-
-function validateForm() {
-  let imdb = document.forms["myForm"]["imdb"].value;
-  if (imdb.contains("http") == false) {
-    alert("Name must be filled out");
-    return false;
-  }
-}
