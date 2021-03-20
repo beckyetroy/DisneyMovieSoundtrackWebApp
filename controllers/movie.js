@@ -9,7 +9,7 @@ const movie = {
     const movieId = request.params.id;
     logger.debug('Movie id = ' + movieId);
     const viewData = {
-      title: 'Movie',
+      title: movieStore.getMovie(movieId).title,
       movie: movieStore.getMovie(movieId),
     };
     response.render('movie', viewData);
