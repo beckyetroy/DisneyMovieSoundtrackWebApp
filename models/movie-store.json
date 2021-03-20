@@ -100,23 +100,6 @@
           "duration": 45
         }
       ]
-    },
-    {
-      "id": "9113d16f-4427-4ed8-92eb-feed8ec28e34",
-      "image": "blob:https://20088744ca1.glitch.me/b33e0e23-dae0-4fd6-85c1-9f0cdbaae9a2",
-      "title": "The Hunchback of Notre Dame",
-      "year": "1996",
-      "director": "Gary Trousdale and Kirk Wise",
-      "imdb": "https://www.imdb.com/title/tt0116583/",
-      "tracks": []
-    },
-    {
-      "id": "20c7667c-b4de-4dac-98ab-e4c9ddcaa321",
-      "title": "New Playlist",
-      "year": "gvb",
-      "director": "Gary Trousdale and Kirk Wise",
-      "imdb": "\"image\": \"https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fb7902dabddffa9551cf191d151869dd899-14-beauty-and-the-beast.rsquare.w700.jpg?v=1615742288125\",       \"title\": \"Beauty and the Beast\",       \"year\": 1991,       \"director\": \"Gary Trousdale and Kirk Wise\",       \"imdb\": \"https://www.imdb.com/title/tt0101414/\",",
-      "tracks": []
     }
   ]
 }

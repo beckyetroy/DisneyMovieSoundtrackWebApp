@@ -42,3 +42,5 @@
   - Changed all mention of 'song' to 'track'
   
 - Added 3 sample movies and a number of songs for each movie
+
+- Edited movie form to suit assignment, including a feature that allowed the user to pick between 3 default images to display the movie
