@@ -128,13 +128,16 @@ input[type="radio"]:checked + label {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-decoration: underline;
+  font-family: DisneyFont;
 }
 
-form {
-  width: 100%;
+.div.form {
+  background-color: white;
+  width: 98%;
   padding: 1.5em;
+  margin-left: 1%;
 }
 
 .ui.stacked.segment.form label {
