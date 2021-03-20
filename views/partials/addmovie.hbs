@@ -2,11 +2,11 @@
   <div class="four fields">
   <div class = "field">
     <label>Title</label>
-    <input placeholder="Title" type="text" name="title" required required oninvalid="this.setCustomValidity('Please enter the Movie Title')" oninput="this.setCustomValidity('')">
+    <input placeholder="Title" type="text" name="title" required oninvalid="this.setCustomValidity('Please enter the Movie Title')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label>Link to IMDb</label>
-    <input placeholder="IMDb" type="url" pattern="https?://www.imdb.com+" name="imdb" oninvalid="this.setCustomValidity('Please enter a valid IMDb Link')">
+    <input placeholder="IMDb" type="url" name="imdb">
   </div>
   <div class="field">
     <label>Year</label>
