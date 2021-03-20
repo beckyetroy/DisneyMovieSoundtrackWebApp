@@ -40,3 +40,5 @@
 - Updated all parameters to suit assignment
   - Changed all mention of 'playlist' to 'movie'
   - Changed all mention of 'song' to 'track'
+  
+- Added 3 sample movies and a number of songs for each movie
