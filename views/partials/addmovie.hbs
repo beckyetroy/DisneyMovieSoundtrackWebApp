@@ -1,3 +1,6 @@
+{{!-- Bootstrap was imported to hide radio buttons below using "sr-only" class as found here: https://getbootstrap.com/docs/4.4/getting-started/accessibility/ --}}
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
 <form class="ui stacked segment form" action="/dashboard/addmovie" method="POST">
   <div class="four fields">
   <div class = "field">
@@ -16,14 +19,20 @@
     <label>Director(s)</label>
     <input placeholder="Director" type="text" name="director" required oninvalid="this.setCustomValidity('Please enter Director(s)')" oninput="this.setCustomValidity('')">
   </div>
-    <div class="field">
+    <div class="field" id = "imageField">
       <label>Choose an image:</label>
-    <input type="radio" name="image" id="mickey">
+    <input type="radio" name="image" class="sr-only" id="mickey">
+      <label for="mickey">
     <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fclipart-mouse-silhouette-18.png?v=1616263011174" alt="Mickey Mouse" class = "ui tiny image">
-  <input type="radio" name="image" id="animals">
+      </label>
+  <input type="radio" name="image" class="sr-only" id="animals">
+      <label for="animals">
     <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7bd652220d1b17df2be9e6fea200c292.jpg?v=1616263751463" alt="Animals" class = "ui tiny image">
-      <input type="radio" name="image" id="princesses">
+      </label>
+      <input type="radio" name="image" class="sr-only" id="princesses">
+      <label for="princesses">
     <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fifxfw2x2-720.jpg?v=1616263759177" alt="Animals" class = "ui tiny image">
+      </label>
   </div>
   </div>
   <button class="ui blue submit button">Add Movie</button>

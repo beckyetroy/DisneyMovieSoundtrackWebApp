@@ -111,3 +111,14 @@ h2 {
   color: #997a00;
 }
 
+label>img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+label:hover {
+  filter: grayscale(0);
+}
+input[type="radio"]:checked + label {
+  filter: grayscale(0);
+}
