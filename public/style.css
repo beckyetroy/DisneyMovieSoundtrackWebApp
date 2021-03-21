@@ -196,17 +196,6 @@ tr {
   color: #cc99ff;
 }
 
-#Contact td {
-  border: 2px solid #e6ccff;
-  background-color: #cceeff;
-}
-
-#Contact thead tr, #Contact thead td {
-  background-color: white;
-  text-align: center;
-  font-weight: bold;
-}
-
 #card, #desc {
   display: none;
 }
@@ -215,3 +204,17 @@ tr {
   cursor: pointer;
 }
 
+#Contact td {
+  border: 2px solid #e6ccff;
+  background-color: white;
+}
+
+#Contact thead tr, #Contact thead td {
+  background-color: #cccccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+#Contact {
+  font-family: "Helvetica", serif;
+}
