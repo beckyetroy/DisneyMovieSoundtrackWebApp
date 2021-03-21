@@ -154,4 +154,18 @@ h3 {
   padding: 1em 2em 1em 2em;
 }
 
-.
+tr {
+  background-color: #e6ccff;
+}
+
+.listen {
+  text-align: right;
+}
+
+.listen a:hover {
+  color: 
+}
+
+.listen a {
+  color:
+}
