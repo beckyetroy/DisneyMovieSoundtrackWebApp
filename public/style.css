@@ -158,14 +158,10 @@ tr {
   background-color: #e6ccff;
 }
 
-.listen {
-  text-align: right;
-}
-
 .listen a:hover {
-  color: 
+  color: #ffccff;
 }
 
 .listen a {
-  color:
+  color: white;
 }

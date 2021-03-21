@@ -20,11 +20,13 @@
         <td>
           {{genre}}
         </td>
-        <td class = "listen">
-          <a href ="{{youtube}}" target="_blank">Listen now</a>
+        <td class = "listen" style="text-align:right;">
+          <button class = "ui blue button">
+            <a href ="{{youtube}}" target="_blank">Listen now!</a>
+          </button>
         </td>
-        <td class = "delete">
-          <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button deltrack"> <i class="icon trash"></i></a>
+        <td class = "delete" style="text-align:right;">
+          <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button deltrack"> <i class="blue icon trash"></i></a>
         </td>
       </tr>
     {{/each}}
