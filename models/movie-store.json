@@ -16,14 +16,14 @@
           "youtube": "https://www.youtube.com/watch?v=xDUhINW3SPs"
         },
         {
-          "id": "05",
+        "id": "05",
           "title": "Be Our Guest",
           "singer": "Jerry Orbach and Angela Lansbury",
           "genre": "Show tune",
           "youtube": "https://www.youtube.com/watch?v=I7bJuMivqP8"
         },
         {
-          "id": "06",
+        "id": "06",
           "title": "Belle",
           "singer": "Paige O'Hara",
           "genre": "Misc",
@@ -90,6 +90,37 @@
           "singer": "Jeremy Irons",
           "genre": "Pop",
           "youtube": "https://www.youtube.com/watch?v=XkU23m6yX04"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "image": "https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMCDPRAN_EC143.jpg?v=1616290869861",
+      "title": "The Princess and the Frog",
+      "year": 2009,
+      "director": "Ron Clements and John Musker",
+      "imdb": "https://www.imdb.com/title/tt0780521/",
+      "tracks": [
+        {
+          "id": "04",
+          "title": "Almost There",
+          "singer": "Anika Noni Rose",
+          "genre": "Jazz",
+          "youtube": "https://www.youtube.com/watch?v=ThMwHKfzz1I"
+        },
+        {
+          "id": "05",
+          "title": "Friends on the Other Side",
+          "singer": "Keith David",
+          "genre": "Jazz",
+          "youtube": "https://www.youtube.com/watch?v=yZAY-78zhmw"
+        },
+        {
+          "id": "06",
+          "title": "Dig a Little Deeper",
+          "singer": "Jenifer Lewis",
+          "genre": "Jazz",
+          "youtube": "https://www.youtube.com/watch?v=yZAY-78zhmw"
         }
       ]
     }
