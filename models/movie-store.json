@@ -71,18 +71,18 @@
       "imdb": "https://www.imdb.com/title/tt0110357/",
       "tracks": [
         {
-          "id": "10",
-          "title": "Opus 34: Six variations on a theme in F major",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 11
+          "id": "04",
+          "title": "Circle of Life",
+          "singer": "Carmen Twillie",
+          "genre": "Pop",
+          "youtube": "https://www.youtube.com/watch?v=lXjI2kuNkhE"
         },
         {
-          "id": "11",
-          "title": "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 45
+          "id": "05",
+          "title": "Circle of Life",
+          "singer": "Carmen Twillie",
+          "genre": "Pop",
+          "youtube": "https://www.youtube.com/watch?v=lXjI2kuNkhE"
         }
       ]
     },
