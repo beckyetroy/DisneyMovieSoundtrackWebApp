@@ -166,11 +166,8 @@ tr {
   color: white;
 }
 
-.rate {
-  font-size:1.25em;
-  background-color: #66ccff;
-  color: white;
-  border: 2px solid #66ccff;
+#rate {
+  cursor: auto;
 }
 
 .aboutHeading {
