@@ -16,14 +16,14 @@
           "youtube": "https://www.youtube.com/watch?v=xDUhINW3SPs"
         },
         {
-        "id": "05",
+          "id": "05",
           "title": "Be Our Guest",
           "singer": "Jerry Orbach and Angela Lansbury",
           "genre": "Show tune",
           "youtube": "https://www.youtube.com/watch?v=I7bJuMivqP8"
         },
         {
-        "id": "06",
+          "id": "06",
           "title": "Belle",
           "singer": "Paige O'Hara",
           "genre": "Misc",
@@ -79,21 +79,19 @@
         },
         {
           "id": "05",
-          "title": "Circle of Life",
-          "singer": "Carmen Twillie",
+          "title": "I Just Can't Wait to be King",
+          "singer": "Jason Weaver",
+          "genre": "Rock and Roll",
+          "youtube": "https://www.youtube.com/watch?v=0bGjlvukgHU"
+        },
+        {
+          "id": "06",
+          "title": "Be Prepared",
+          "singer": "Jeremy Irons",
           "genre": "Pop",
-          "youtube": "https://www.youtube.com/watch?v=lXjI2kuNkhE"
+          "youtube": "https://www.youtube.com/watch?v=XkU23m6yX04"
         }
       ]
-    },
-    {
-      "id": "ff25b12b-2cd3-44b7-a760-ae13e130b076",
-      "image": "https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fifxfw2x2-720.jpg?v=1616263759177",
-      "title": "Mulan",
-      "year": "1998",
-      "director": "Tony Bancroft and Barry Cook",
-      "imdb": "https://www.imdb.com/title/tt0120762/",
-      "tracks": []
     }
   ]
 }
