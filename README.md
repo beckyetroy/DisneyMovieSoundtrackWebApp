@@ -43,4 +43,10 @@
   
 - Added 3 sample movies and a number of songs for each movie
 
-- Edited movie form to suit assignment, including a feature that allowed the user to pick between 3 default images to display the movie
+- Edited movie and track form to suit assignment, including a feature that allowed the user to pick between 3 default images to display the movie
+
+- Customised listtracks and listmovies with css, updated Javascript on the delete buttons
+
+- Removed developer store collection and all associations
+
+- Updated 'about' page to suit assignment

@@ -11,8 +11,7 @@
     </div>
     <div class="field">
       <label for="singer">Singer(s)</label>
-      <input type="text" name="singer" required oninvalid="this.setCustomValidity('Please include the Singer or 'Misc' for a large group of singers)" oninput="this.setCustomValidity('')"
-      placeholder="Singer"  >
+      <input type="text" name="singer" required oninvalid="this.setCustomValidity('Please include the Singer or input Misc for large groups')" oninput="this.setCustomValidity('')" placeholder="Singer">
     </div>
     <div class="field">
       <label for="genre">Genre</label>
@@ -28,7 +27,7 @@
     </div>
     <div class ="field">
       <label for="link">Link to this song (Try YouTube!)</label>
-        <input type="url" id="youtube" name="youtube" required oninvalid="this.setCustomValidity('Please link to this song'')" oninput="this.setCustomValidity('')">
+        <input type="url" id="youtube" name="youtube" required oninvalid="this.setCustomValidity('Please link to this song')" oninput="this.setCustomValidity('')">
     </div>
   </div>
   <button class="ui blue submit button">Add Track</button>
