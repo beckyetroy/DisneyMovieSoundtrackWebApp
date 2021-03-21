@@ -47,6 +47,5 @@
 
 - Customised listtracks and listmovies with css, updated Javascript on the delete buttons
 
-- Removed developer store collection and all associations
-
 - Updated 'about' page to suit assignment
+  - Altered developer-store and card.hbs to suit assignment (although only one developer is present)
