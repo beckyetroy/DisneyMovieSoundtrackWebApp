@@ -6,12 +6,12 @@
   <div class="four fields">
     <div class="field">
       <label for="title">Song Title</label>
-      <input type="text" name="title" required title = "Please include a valid Title"
+      <input type="text" name="title" required oninvalid="this.setCustomValidity('Please enter the Song Title')" oninput="this.setCustomValidity('')"
       placeholder="Title">
     </div>
     <div class="field">
       <label for="singer">Singer(s)</label>
-      <input type="text" name="singer" required title = "Please include a valid Singer or 'Misc'."
+      <input type="text" name="singer" required oninvalid="this.setCustomValidity('Please include the Singer or 'Misc' for a large group of singers)" oninput="this.setCustomValidity('')"
       placeholder="Singer"  >
     </div>
     <div class="field">
@@ -23,9 +23,8 @@
       </select>
     </div>
     <div class ="field">
-      <label for="audio">(Optional) Audio File:</label>
-        <input type="file" id="audio" name="audio" accept="audio/*">
-        <input type="submit">
+      <label for="link">Link to this song (Try YouTube!)</label>
+        <input type="url" id="youtube" name="youtube" required oninvalid="this.setCustomValidity('Please link to this song'')" oninput="this.setCustomValidity('')">
     </div>
   </div>
   <button class="ui blue submit button">Add Track</button>

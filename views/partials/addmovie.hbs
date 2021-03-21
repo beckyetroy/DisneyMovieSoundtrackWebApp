@@ -10,7 +10,7 @@
   </div>
   <div class="field">
     <label>Link to IMDb</label>
-    <input placeholder="IMDb" type="url" name="imdb">
+    <input placeholder="IMDb" type="url" name="imdb" required oninvalid="this.setCustomValidity('Please link the movie's IMDb')" oninput="this.setCustomValidity('')">
   </div>
   <div class="field">
     <label>Year</label>
