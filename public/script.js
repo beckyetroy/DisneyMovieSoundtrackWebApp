@@ -100,27 +100,9 @@ function hideFeedback() {
   feedback.style.display = "none";
 }
 
-function getRating() {
-  let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
-  if (userRating>5 || userRating<1 || isNaN(userRating)){
-    alert("Try again with a number between 1 and 5!");
-  }
-  else{
-    $("#rating").html("You gave a rating of: ");
-    for (let i=0; i < userRating; i++){
-        $("#rating").append("<i class='yellow star icon'></i>");
-    }
-  }
-}
-
 $(".deltrack").click(() => confirm('Are you sure you want to remove this track?'));
 
 $(".delmovie").click(() => confirm('Are you sure you want to remove this movie?'));
-
-function getRating() {
-    var starNo = $(".rating").rating('get rating');
-  alert("You rated this soundtrack: " + starNo + " Stars. Thanks for the feedback!");
-}
 
 $(".rating")
   .rating({
@@ -128,3 +110,13 @@ $(".rating")
   maxRating: 5
   })
 ;
+
+function getRating() {
+    var starNo = $(".rating").rating('get rating');
+  if (starNo > 1) {
+    alert("You rated this soundtrack: " + starNo + " Stars. Thanks for the feedback!");
+  }
+  else {
+    alert("You rated this soundtrack: " + starNo + " Star. Thanks for the feedback!");
+  }
+}

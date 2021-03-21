@@ -46,6 +46,7 @@
 - Edited movie and track form to suit assignment, including a feature that allowed the user to pick between 3 default images to display the movie
 
 - Customised listtracks and listmovies with css, updated Javascript on the delete buttons
+  - Added UI rating system and Javascript alert with feedback
 
 - Updated 'about' page to suit assignment
   - Altered developer-store and card.hbs to suit assignment (although only one developer is present)
