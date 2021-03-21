@@ -79,7 +79,7 @@ p {
   font-size: 0.825em;
 }
 
-#songs {
+#movies, #aboutPage {
   background: rgb(255, 255, 255, 0.5);
 }
 
