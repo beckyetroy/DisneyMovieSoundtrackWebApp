@@ -21,6 +21,13 @@
           "singer": "Jerry Orbach and Angela Lansbury",
           "genre": "Show tune",
           "youtube": "https://www.youtube.com/watch?v=I7bJuMivqP8"
+        },
+        {
+        "id": "06",
+          "title": "Belle",
+          "singer": "Paige O'Hara",
+          "genre": "Misc",
+          "youtube": "https://www.youtube.com/watch?v=5npaNroK6AQ"
         }
       ]
     },
@@ -35,31 +42,23 @@
         {
           "id": "04",
           "title": "A Whole New World",
-          "composer": "Alan Menken",
           "singer": "Lea Salonga and Brad Kane",
           "genre": "Pop",
-          "duration": 5
+          "youtube": "https://www.youtube.com/watch?v=hZ1Rb9hC4JY"
         },
         {
           "id": "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 6
+          "title": "Friend Like Me",
+          "singer": "Robin Williams",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=99Op1TaXmCw"
         },
         {
           "id": "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 4
-        },
-        {
-          "id": "b87895fd-841e-49b7-88b7-70878dd940e1",
-          "title": "Piano Sonata No.5",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": "5"
+          "title": "One Jump Ahead",
+          "singer": "Brad Kane",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=5VdZewCFyfg"
         }
       ]
     },
