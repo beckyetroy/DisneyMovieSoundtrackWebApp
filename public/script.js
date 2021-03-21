@@ -124,6 +124,6 @@ $(".rating")
 ;
 
 function ratingFeedback() {
-  var starNo = $('.ui.rating').rating("get value");
-  alert("You rated this soundtrack: " + starNo + "Stars. Thanks for the feedback!");
+  var starNo = $('.ui.rating').rating('get rating');
+  alert("You rated this soundtrack: " + starNo + " Stars. Thanks for the feedback!");
 }
