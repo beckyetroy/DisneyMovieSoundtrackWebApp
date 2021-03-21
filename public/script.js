@@ -120,3 +120,19 @@ function getRating() {
     alert("You rated this soundtrack: " + starNo + " Star. Thanks for the feedback!");
   }
 }
+
+const showHideAbout = _ => 
+{
+  let desc = document.getElementById("desc");
+  let card = document.getElementById("card");
+  let doubleDown = document.getElementById("doubleDown");
+  if (desc.style.display === "block") {
+    desc.style.display = "none";
+    card.style.display = "none";
+    doubleDown.className = "angle double down icon";
+  } else {
+    desc.style.display = "block";
+    card.style.display = "block";
+    doubleDown.className = "angle double up icon";
+  }
+}

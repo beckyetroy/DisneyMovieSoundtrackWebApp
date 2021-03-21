@@ -206,3 +206,11 @@ tr {
   text-align: center;
   font-weight: bold;
 }
+
+#card, #desc {
+  display: none;
+}
+
+.aboutHeading {
+  cursor: pointer;
+}

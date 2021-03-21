@@ -6,12 +6,12 @@
     About / Contact Us
   </h1>
   
-    <h2 class = "aboutHeading">
-      About the author(s) <i class = "comment alternate outline icon"></i>
+    <h2 class = "aboutHeading" onclick="showHideAbout()">
+      About the author(s) <i class = "angle double down icon" id ="doubleDown"></i>
     </h2>
   </div>
     
-  <div class="ui three wide centered stackable column">
+  <div class="ui three wide centered stackable column" id = "card">
     <div class = "ui cards">
       {{#each developers}}
       {{> card}}
@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class = "ui ten wide centered stackable column">
+  <div class = "ui eight wide centered stackable column" id = "desc">
   <p class = "about">
     This app was created by 20-year-old Second Year college student Rebecca Troy.
     <br><br>
