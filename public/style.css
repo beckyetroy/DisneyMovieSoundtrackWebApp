@@ -192,3 +192,13 @@ tr {
   color: #cc99ff;
 }
 
+#Contact td {
+  border: 2px solid #e6ccff;
+  background-color: #cceeff;
+}
+
+#Contact thead tr, #Contact thead td {
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
