@@ -117,13 +117,14 @@ $(".deltrack").click(() => confirm('Are you sure you want to remove this track?'
 
 $(".delmovie").click(() => confirm('Are you sure you want to remove this movie?'));
 
-$(".rating")
-  .rating({
-    maxRating: 5
-  })
-;
-
-function ratingFeedback() {
-  var starNo = $('.ui.rating').rating('get rating');
+function getRating() {
+    var starNo = $(".rating").rating('get rating');
   alert("You rated this soundtrack: " + starNo + " Stars. Thanks for the feedback!");
 }
+
+$(".rating")
+  .rating({
+  onRate: getRating,
+  maxRating: 5
+  })
+;
