@@ -116,3 +116,9 @@ function getRating() {
 $(".deltrack").click(() => confirm('Are you sure you want to remove this track?'))
 
 $(".delmovie").click(() => confirm('Are you sure you want to remove this movie?'))
+
+$(".rating")
+  .rating({
+    maxRating: 5
+  })
+;
