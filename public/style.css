@@ -175,3 +175,7 @@ tr {
   border-radius: 10px;
   color: white;
 }
+
+#aboutPage {
+  padding: 0 3em 0 3em;
+}
