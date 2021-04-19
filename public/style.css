@@ -60,6 +60,17 @@ p {
   color: white;
 }
 
+.stats {
+  font-size:1.25em;
+  padding: 1.25em;
+  font-weight: bold;
+  color: white;
+  background: #cccccc;
+  border: 5px solid #cccccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .buttons {
   text-align: center;
 }

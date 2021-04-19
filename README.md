@@ -50,3 +50,5 @@
 
 - Updated 'about' page to suit assignment
   - Altered developer-store and card.hbs to suit assignment (although only one developer is present)
+  
+-Added statistics feature to start page which calculates how many movies and tracks have been added so far to the app.
