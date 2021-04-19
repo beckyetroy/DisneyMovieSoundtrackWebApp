@@ -1,6 +1,6 @@
-# Continuous Assessment
+# Continuous Assessment 2
 
-- Started by remixing week7lab6, which details as follows:
+- Started by remixing 20088744ca1, which details as follows:
 - Updated index.html to use a Semantic UI grid including segments, texts, buttons, and
   images
 - Added some extra styles in styles.css
