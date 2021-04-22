@@ -15,6 +15,10 @@ const movieStore = {
   getMovie(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
+  
+  getUserMovies(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
 
   addMovie(movie) {
     this.store.add(this.collection, movie);

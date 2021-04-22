@@ -5,6 +5,7 @@
 const express = require('express');
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
+const cookieParser = require('cookie-parser');
 
 // initialise project
 const app = express();
