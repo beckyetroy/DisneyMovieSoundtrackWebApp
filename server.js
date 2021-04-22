@@ -2,19 +2,21 @@
 'use strict';
 
 // import all required modules
-const express = require('express');
+const express = require("express");
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 // initialise project
 const app = express();
 
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false, }));
-
 // static files output to public folder
-app.use(express.static('public'));
+app.use(express.static("public"));
+
+// use bodyParser and cookieParser
+app.use(bodyParser.urlencoded({ extended: false, }));
+app.use(cookieParser());
 
 // use handlebars as view engine
 app.engine('.hbs', exphbs({
@@ -29,5 +31,5 @@ app.use('/', routes);
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`glitch-playlist1 started on port ${listener.address().port}`);
+  logger.info('Your app is listening on port ' + listener.address().port);
 });
