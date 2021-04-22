@@ -62,13 +62,18 @@ p {
 
 .stats {
   font-size:1.25em;
-  padding: 1.25em;
   font-weight: bold;
   color: white;
-  background: #cccccc;
-  border: 5px solid #cccccc;
+  background-color: #ccccff;
+  border: 5px solid #000066;
   border-radius: 10px;
-  margin: 0 auto;
+  text-align: center;
+  text-shadow: #000 0px 0px 1px;
+}
+
+#title {
+  font-family: "DisneyFont", sans-serif;
+  font-size:1.5em;
 }
 
 .buttons {
