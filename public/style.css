@@ -68,7 +68,12 @@ p {
   border: 5px solid #000066;
   border-radius: 10px;
   text-align: center;
-  text-shadow: #000 0px 0px 1px;
+  text-shadow: #000 0px 0px 1.5px;
+}
+
+.ui.big.statistic {
+  padding-left:1.5em;
+  text-shadow: none;
 }
 
 #title {
