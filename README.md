@@ -28,6 +28,7 @@
 - Added forms in order to add songs and playlists
 
 - Updated start page
+
   - Changed images and css to suit assignment
   - Downloaded custom font to use (see css file)
   - Added Javascript to images to change image when mouse hovers over
@@ -38,17 +39,22 @@
     - Feedback Paragraph can be hidden again by clicking it. Tooltip informs user of this.
 
 - Updated all parameters to suit assignment
+
   - Changed all mention of 'playlist' to 'movie'
   - Changed all mention of 'song' to 'track'
-  
+
 - Added 3 sample movies and a number of songs for each movie
 
 - Edited movie and track form to suit assignment, including a feature that allowed the user to pick between 3 default images to display the movie
 
 - Customised listtracks and listmovies with css, updated Javascript on the delete buttons
+
   - Added UI rating system and Javascript alert with feedback
 
 - Updated 'about' page to suit assignment
+
   - Altered developer-store and card.hbs to suit assignment (although only one developer is present)
-  
+
+---
+
 -Added statistics feature to start page which calculates how many movies and tracks have been added so far to the app.
