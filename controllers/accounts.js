@@ -44,8 +44,9 @@ const accounts = {
   //authenticate function to check user credentials and either render the login page again or the start page.
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
-      response.cookie('playlist', user.email);
+    const password = userstore.getUserByPassword(request.body.password);
+    if ((user) && (user.password === request.body.password)) {
+      response.cookie('movie', user.email);
       logger.info('logging in' + user.email);
       response.redirect('/start');
     } else {

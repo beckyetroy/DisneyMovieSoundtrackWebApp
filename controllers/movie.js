@@ -7,14 +7,19 @@ const accounts = require ('./accounts.js');
 
 const movie = {
   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);  
     const movieId = request.params.id;
     logger.debug('Movie id = ' + movieId);
+    if (loggedInUser) {
     const viewData = {
       title: movieStore.getMovie(movieId).title,
       movie: movieStore.getMovie(movieId),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     response.render('movie', viewData);
-  },
+    }
+    else response.redirect('/');
+},
   
   deleteTrack(request, response) {
     const movieId = request.params.id;

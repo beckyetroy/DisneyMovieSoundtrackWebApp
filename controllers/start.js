@@ -35,8 +35,10 @@ const start = {
 
     // render the start view and pass through the data
     response.render('start', viewData);
+  }
+    else response.redirect('/');
   },
-};
+}
 
 // export the start module
 module.exports = start;
