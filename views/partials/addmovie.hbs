@@ -1,5 +1,5 @@
 <div class = "form div">
-<form class="ui stacked segment form" action="/dashboard/addmovie" method="POST" style="background-color: #000066; color: white; padding: 2em;">
+<form class="ui stacked segment form" action="/dashboard/addmovie" method="POST" style="background-color: #000066; color: white; padding: 2em;" enctype="multipart/form-data">
   <h3>
     Add Movie
   </h3>
@@ -20,29 +20,10 @@
     <label>Director(s)</label>
     <input placeholder="Director" type="text" name="director" required oninvalid="this.setCustomValidity('Please enter Director(s)')" oninput="this.setCustomValidity('')">
   </div>
-    <div class = "field">
-      <label>Choose an image:</label>
-    <div class="three fields">
-      <div class = "field">
-    <input type="radio" name="image" class="radio-btn" id="mickey" checked="checked" value="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fclipart-mouse-silhouette-18.png?v=1616265337510">
-      <label for="mickey">
-    <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fclipart-mouse-silhouette-18.png?v=1616265337510" alt="Mickey Mouse" class = "ui tiny image">
-      </label>
-        </div>
-      <div class = "field">
-  <input type="radio" name="image" class="radio-btn" id="animals" value="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7bd652220d1b17df2be9e6fea200c292.jpg?v=1616263751463">
-      <label for="animals">
-    <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7bd652220d1b17df2be9e6fea200c292.jpg?v=1616263751463" alt="Animals" class = "ui tiny image">
-      </label>
-        </div>
-      <div class = "field">
-      <input type="radio" name="image" class="radio-btn" id="princesses" value="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fifxfw2x2-720.jpg?v=1616263759177">
-      <label for="princesses">
-    <img src="https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fifxfw2x2-720.jpg?v=1616263759177" alt="Animals" class = "ui tiny image">
-      </label>
-        </div>
-      </div>
-  </div>
+    <div class="field">
+      <label>Image</label>
+      <input placeholder="Image" type="file" name="picture" required>
+    </div>
   </div>
   <div class = "btn div">
   <button class="ui inverted violet submit button">Add Movie</button>

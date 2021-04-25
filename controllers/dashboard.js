@@ -36,7 +36,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newMovie = {
       id: uuid(),
-      image: request.body.image,
+      image: request.files.picture,
       title: request.body.title,
       year: request.body.year,
       director: request.body.director,
@@ -44,10 +44,10 @@ const dashboard = {
       tracks: [],
     };
     logger.debug('Creating a new Movie' + newMovie);
-    movieStore.addMovie(newMovie);
-    response.redirect('/dashboard');
-  },
-};
+    movieStore.addMovie(newPlayList, function() {
+      response.redirect("/dashboard");
+    });
+}
 
 // export the dashboard module
 module.exports = dashboard;
