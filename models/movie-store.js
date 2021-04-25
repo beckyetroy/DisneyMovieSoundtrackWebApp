@@ -32,7 +32,16 @@ const movieStore = {
     return this.store.findBy(this.collection, { userid: userid });
   },
 
-  addMovie(movie) {
+  addMovie(movie, response) {
+    movie.picture.mv('tempimage', err => {
+        if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            movie.picture = result.url;
+            response();
+          });
+        }
+      });
     this.store.add(this.collection, movie);
   },
 
