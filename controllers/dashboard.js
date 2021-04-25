@@ -16,10 +16,10 @@ const dashboard = {
     if (loggedInUser) {
     const viewData = {
       title: 'Dashboard',
-      movies: movieStore.getUserPlaylists(loggedInUser.id),
+      movies: movieStore.getUserMovies(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-    logger.info('about to render' + viewData.playlists);
+    logger.info('about to render' + viewData.movies);
     response.render('dashboard', viewData);
     }
     else response.redirect('/');
@@ -33,6 +33,7 @@ const dashboard = {
   },
   
   addMovie(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newMovie = {
       id: uuid(),
       image: request.body.image,
@@ -42,6 +43,7 @@ const dashboard = {
       imdb: request.body.imdb,
       tracks: [],
     };
+    logger.debug('Creating a new Movie' + newMovie);
     movieStore.addMovie(newMovie);
     response.redirect('/dashboard');
   },
