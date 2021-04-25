@@ -4,25 +4,25 @@
 const logger = require('../utils/logger');
 const movieStore = require('../models/movie-store.js');
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 // create dashboard object
 const dashboard = {
 
   // index method - responsible for creating and rendering the view
   index(request, response) {
-
-    // display confirmation message in log
     logger.info('dashboard rendering');
-
-    // create view data object (contains data to be sent to the view e.g. page title)
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
       title: 'Dashboard',
-      movies: movieStore.getAllMovies(),
+      movies: movieStore.getUserPlaylists(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-
-    // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.movies);
+    logger.info('about to render' + viewData.playlists);
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
   
   deleteMovie(request, response) {
