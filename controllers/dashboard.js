@@ -44,10 +44,11 @@ const dashboard = {
       tracks: [],
     };
     logger.debug('Creating a new Movie' + newMovie);
-    movieStore.addMovie(newPlayList, function() {
+    movieStore.addMovie(newMovie, function() {
       response.redirect("/dashboard");
     });
-}
+  },
+};
 
 // export the dashboard module
 module.exports = dashboard;
