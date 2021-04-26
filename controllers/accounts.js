@@ -65,7 +65,6 @@ const accounts = {
       response.redirect('/start');
     } else {
       response.redirect('/login');
-      showHideLogInError();
     }
   },
  //utility function getCurrentUser to check who is currently logged in
