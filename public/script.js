@@ -137,10 +137,15 @@ const showHideAbout = _ =>
   }
 }
 
-const showLogInError = _ =>
+const showHideLogInError = _ =>
 {
   let message = document.getElementById("logInError");
-  message.style.display = "block";
+  if (message.style.display === "block") {
+    message.style.display === "none";
+  }
+  else {
+    message.style.display === "block";
+  }
 }
 
 const hideLogInError = _ => 
