@@ -136,14 +136,3 @@ const showHideAbout = _ =>
     doubleDown.className = "angle double up icon";
   }
 }
-
-const showHideLogInError = _ =>
-{
-  let message = document.getElementById("logInError");
-  if (message.style.display === "block") {
-    message.style.display === "none";
-  }
-  else {
-    message.style.display === "block";
-  }
-}
