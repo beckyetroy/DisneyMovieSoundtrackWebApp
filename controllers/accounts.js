@@ -32,13 +32,13 @@ const accounts = {
   //login function to render login page
   login(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'Login',
     };
     response.render('login', viewData);
   },
   //logout function to render logout page
   logout(request, response) {
-    response.cookie('playlist', '');
+    response.cookie('movie', '');
     response.redirect('/');
   },
  //signup function to render signup page

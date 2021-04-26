@@ -1,5 +1,11 @@
 {
   "users": [
-
+    {
+      "firstName": "Becky",
+      "lastName": "Troy",
+      "email": "beckyetroy@gmail.com",
+      "password": "Pepper19!",
+      "id": "2259d2a0-3514-48ce-88c4-c92919637854"
+    }
   ]
 }
