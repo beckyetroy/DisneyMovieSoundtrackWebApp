@@ -35,6 +35,8 @@ const accounts = {
       title: 'Login to the Service',
     };
     response.render('login', viewData);
+    let message = response.getElementById("logInError");
+    message.style.display = "none";
   },
   //logout function to render logout page
   logout(request, response) {
@@ -65,7 +67,8 @@ const accounts = {
       response.redirect('/start');
     } else {
       response.redirect('/login');
-      showLogInError();
+      let message = response.getElementById("logInError");
+      message.style.display = "block";
     }
   },
  //utility function getCurrentUser to check who is currently logged in
