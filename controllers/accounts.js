@@ -10,8 +10,22 @@ const accounts = {
 
   //index function to render index page
   index(request, response) {
+
+    // display confirmation message in log
+    logger.info('start rendering');
+    
+      // app statistics calculations
+      const movies = movieStore.getAllMovies();
+      let numMovies = movies.length;
+      let numTracks = 0;
+      for (let item of movies) {
+        numTracks += item.tracks.length;
+      }
+
     const viewData = {
-      title: 'Login or Signup',
+      title: 'Disney Movie Soundtracks 101',
+      totalMovies: numMovies,
+      totalTracks: numTracks,
     };
     response.render('index', viewData);
   },
@@ -45,7 +59,6 @@ const accounts = {
   //authenticate function to check user credentials and either render the login page again or the start page.
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    const password = userstore.getUserByPassword(request.body.password);
     if ((user) && (user.password === request.body.password)) {
       response.cookie('movie', user.email);
       logger.info('logging in' + user.email);
