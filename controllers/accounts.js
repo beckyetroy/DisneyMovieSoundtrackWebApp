@@ -3,6 +3,7 @@
 const userstore = require('../models/user-store');
 const logger = require('../utils/logger');
 const uuid = require('uuid');
+const movieStore = require('../models/movie-store.js');
 
 //create an accounts object
 const accounts = {
