@@ -20,6 +20,8 @@ const about = {
       const viewData = {
       title: 'About the App',
       developers: developerStore.getAllDevelopers(),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
     response.render('about', viewData);
     }
