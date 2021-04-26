@@ -247,3 +247,12 @@ tr {
   font-weight:bold;
   text-transform:capitalize;
 }
+
+.logInError {
+  background-color: #cccccc;
+  display:inline-block;
+  padding: 0.5em;
+  border: 2.5px solid #cccccc;
+  border-radius: 5px;
+  color: white;
+}
