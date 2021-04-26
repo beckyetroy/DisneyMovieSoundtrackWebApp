@@ -44,7 +44,7 @@ const accounts = {
  //signup function to render signup page
   signup(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'Login',
     };
     response.render('signup', viewData);
   },
@@ -65,6 +65,7 @@ const accounts = {
       response.redirect('/start');
     } else {
       response.redirect('/login');
+      showLogInError();
     }
   },
  //utility function getCurrentUser to check who is currently logged in

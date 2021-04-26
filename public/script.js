@@ -137,18 +137,14 @@ const showHideAbout = _ =>
   }
 }
 
-const logInError = _ => 
+const showLogInError = _ => 
 {
-  let desc = document.getElementById("desc");
-  let card = document.getElementById("card");
-  let doubleDown = document.getElementById("doubleDown");
-  if (desc.style.display === "block") {
-    desc.style.display = "none";
-    card.style.display = "none";
-    doubleDown.className = "angle double down icon";
-  } else {
-    desc.style.display = "block";
-    card.style.display = "block";
-    doubleDown.className = "angle double up icon";
-  }
+  let message = document.getElementById("logInError");
+  message.style.display = "block";
+}
+
+const hideLogInError = _ => 
+{
+  let message = document.getElementById("logInError");
+  message.style.display = "none";
 }
