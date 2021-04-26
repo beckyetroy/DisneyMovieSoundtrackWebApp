@@ -36,6 +36,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newMovie = {
       id: uuid(),
+      userid: loggedInUser.id,
       image: request.files.picture,
       title: request.body.title,
       year: request.body.year,

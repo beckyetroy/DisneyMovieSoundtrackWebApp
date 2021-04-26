@@ -32,7 +32,7 @@ const accounts = {
   //login function to render login page
   login(request, response) {
     const viewData = {
-      title: 'Login',
+      title: 'Login - Disney Movie Soundtracks 101',
     };
     response.render('login', viewData);
   },
@@ -44,7 +44,7 @@ const accounts = {
  //signup function to render signup page
   signup(request, response) {
     const viewData = {
-      title: 'Login',
+      title: 'Sign Up - Disney Movie Soundtracks 101',
     };
     response.render('signup', viewData);
   },
@@ -54,7 +54,9 @@ const accounts = {
     user.id = uuid();
     userstore.addUser(user);
     logger.info('registering' + user.email);
-    response.redirect('/dashboard');
+    userstore.addUser(user, function() {
+      response.redirect("/dashboard");
+    });
   },
   //authenticate function to check user credentials and either render the login page again or the start page.
   authenticate(request, response) {
