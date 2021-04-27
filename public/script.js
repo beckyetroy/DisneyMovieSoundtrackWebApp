@@ -48,11 +48,11 @@ $('#Left5').mouseover(function() {
    });
 
 $('#Left6').mouseover(function() {
-  if ($('#Left6').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905') {
-    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Funtitled-1b.jpg?v=1619555536531');
+  if ($('#Left6').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2FSword-Stone.jpg?v=1619555367720') {
+    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2F7ebb4df821cc0323f3b56686035b6025.jpg?v=1619555322006');
   }
   else {
-    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905');
+    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2FSword-Stone.jpg?v=1619555367720');
   }
    });
 
@@ -89,6 +89,24 @@ $('#Right4').mouseover(function() {
   }
   else {
     $('#Right4').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036');
+  }
+   });
+
+$('#Right5').mouseover(function() {
+  if ($('#Right5').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2F1452771009-movies-robin-hood-disney.jpg?v=1619555329476') {
+    $('#Right5').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Fbe8d7f1503fae498d1fa099e21cbc750.jpg?v=1619555333739');
+  }
+  else {
+    $('#Right5').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2F1452771009-movies-robin-hood-disney.jpg?v=1619555329476');
+  }
+   });
+
+$('#Right6').mouseover(function() {
+  if ($('#Right6').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036') {
+    $('#Right6').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fpocahontas1.jpg?v=1615742319291');
+  }
+  else {
+    $('#Right6').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036');
   }
    });
 
