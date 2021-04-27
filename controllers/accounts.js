@@ -29,6 +29,7 @@ const accounts = {
     
     var mostContributions= "";
     var sumContributions = 0;
+    var mostProfilePic = "";
     for (let i = 0; i < users.length; i++) {
       let movies = movieStore.getUserMovies(users[i].id);
       let numMovies = movies.length;
@@ -39,9 +40,11 @@ const accounts = {
       if (((numMovies + numTracks) > sumContributions) || sumContributions === 0) {
         sumContributions = numMovies + numTracks;
         mostContributions = users[i].firstName + " " + users[i].lastName;
+        mostProfilePic = users[i].picture;
       }
-      else if ((numMovies + numTracks) === sumContributions) {
-        mostContributions = mostContributions + " and " + users[i].firstName + " " + users[i].lastName;
+      else if (((numMovies + numTracks) === sumContributions) && sumContributions !== 0) {
+        mostContributions = mostContributions + ", " + users[i].firstName + " " + users[i].lastName;
+        mostProfilePic = "";
       }
     }
     
@@ -57,11 +60,12 @@ const accounts = {
       }
       if (((numMovies + numTracks) < sumContributions2) || sumContributions2 === 0) {
         sumContributions2 = numMovies + numTracks;
+        leastContributions = users[i].firstName + " " + users[i].lastName;
         leastProfilePic = users[i].picture;
-        leastContributions = users[i].firstName + " " + users[i].lastName + " " + '<img src="' + leastProfilePic + '" class="ui circular inline image">';
       }
-      else if ((numMovies + numTracks) === sumContributions2) {
-        leastContributions = leastContributions + " and " + users[i].firstName + " " + users[i].lastName;
+      else if (((numMovies + numTracks) === sumContributions2) && sumContributions2 !== 0){
+        leastContributions = leastContributions + ", " + users[i].firstName + " " + users[i].lastName;
+        leastProfilePic = "";
       }
     }
 
@@ -73,6 +77,8 @@ const accounts = {
       avgTracks: averageTracks,
       bigContributer: mostContributions,
       smallContributer: leastContributions,
+      bigProfilePic: mostProfilePic,
+      smallProfilePic: leastProfilePic,
     };
     response.render('index', viewData);
   },
