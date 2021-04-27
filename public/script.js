@@ -38,6 +38,24 @@ $('#Left4').mouseover(function() {
   }
    });
 
+$('#Left5').mouseover(function() {
+  if ($('#Left5').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905') {
+    $('#Left5').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Funtitled-1b.jpg?v=1619555536531');
+  }
+  else {
+    $('#Left5').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905');
+  }
+   });
+
+$('#Left6').mouseover(function() {
+  if ($('#Left6').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905') {
+    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Funtitled-1b.jpg?v=1619555536531');
+  }
+  else {
+    $('#Left6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Flilo-and-stitch-disney.jpg?v=1619555346905');
+  }
+   });
+
 $('#Right1').mouseover(function() {
   if ($('#Right1').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F239649989.jpg.gallery.jpg?v=1615674618968') {
     $('#Right1').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2F7e379ba43ae0eb40f4053a33db15f0c02f8e3781.jpg?v=1615742266266');
