@@ -114,6 +114,10 @@ p {
   text-align:left;
 }
 
+.ui.button {
+  font-size:1.25em;
+}
+
 h2 {
   font-family: 'FilmFont', sans-serif;
   font-weight: bold;
