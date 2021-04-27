@@ -77,6 +77,10 @@ p {
   text-shadow: none;
 }
 
+.ui.circular.inline.image {
+  height: 1em;
+}
+
 #title {
   font-family: "DisneyFont", sans-serif;
   font-size:1.5em;
