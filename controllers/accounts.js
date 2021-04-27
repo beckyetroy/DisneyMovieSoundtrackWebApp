@@ -28,11 +28,17 @@ const accounts = {
       let averageTracks = numTracks/numUsers;
     
     var mostContributions= "";
-    var sumSongs = 0;
+    var sumContributions = 0;
     for (let i = 0; i < users.length; i++) {
-      if (movieStore.getUserMovies[i].length > sumSongs) {
-      sumSongs = playlistCollection[i].songs.length;
-      mostSongs = playlistCollection[i].title;
+      let movies = movieStore.getUserMovies(users[i].id);
+      let numMovies = movies.length;
+      let numTracks = 0;
+      for (let item of movies) {
+        numTracks += item.tracks.length;
+      }
+      if ((numMovies + numTracks) > sumContributions){
+        sumContributions = numMovies + numTracks;
+        mostContributions = 
       }
       else if (playlistCollection[i].songs.length = sumSongs) {
       mostSongs = mostSongs + (" and " + playlistCollection[i].title);
