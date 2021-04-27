@@ -23,11 +23,15 @@ const accounts = {
         numTracks += item.tracks.length;
       }
       let numUsers = users.length;
+      let averageMovies = numMovies/numUsers;
+      let averageTracks = numTracks/numUsers;
 
     const viewData = {
       title: 'Disney Movie Soundtracks 101',
       totalMovies: numMovies,
       totalTracks: numTracks,
+      avgMovies: averageMovies,
+      avgTracks: averageTracks,
     };
     response.render('index', viewData);
   },
