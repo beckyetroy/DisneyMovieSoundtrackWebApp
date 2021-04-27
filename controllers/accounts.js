@@ -71,7 +71,7 @@ const accounts = {
   },
  //utility function getCurrentUser to check who is currently logged in
   getCurrentUser (request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.movie;
     return userstore.getUserByEmail(userEmail);
   }
 }

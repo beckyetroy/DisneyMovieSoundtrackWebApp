@@ -16,6 +16,7 @@ const start = {
     logger.info('start rendering');
     
     if(loggedInUser){
+      logger.info('test');
     
       // app statistics calculations
       const movies = movieStore.getAllMovies();
