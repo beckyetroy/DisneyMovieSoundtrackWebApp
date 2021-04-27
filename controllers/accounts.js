@@ -22,9 +22,22 @@ const accounts = {
       for (let item of movies) {
         numTracks += item.tracks.length;
       }
+    
       let numUsers = users.length;
       let averageMovies = numMovies/numUsers;
       let averageTracks = numTracks/numUsers;
+    
+    var mostContributions= "";
+    var sumSongs = 0;
+    for (let i = 0; i < users.length; i++) {
+      if (movieStore.getUserMovies[i].length > sumSongs) {
+      sumSongs = playlistCollection[i].songs.length;
+      mostSongs = playlistCollection[i].title;
+      }
+      else if (playlistCollection[i].songs.length = sumSongs) {
+      mostSongs = mostSongs + (" and " + playlistCollection[i].title);
+      }
+    }
 
     const viewData = {
       title: 'Disney Movie Soundtracks 101',
