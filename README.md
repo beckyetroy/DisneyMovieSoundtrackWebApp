@@ -57,4 +57,5 @@
 
 ---
 
--Added statistics feature to start page which calculates how many movies and tracks have been added so far to the app.
+- Added statistics feature to start page which calculates how many movies and tracks have been added so far to the app.
+- 
