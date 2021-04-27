@@ -36,12 +36,30 @@ const accounts = {
       for (let item of movies) {
         numTracks += item.tracks.length;
       }
-      if ((numMovies + numTracks) > sumContributions){
+      if (((numMovies + numTracks) > sumContributions) || sumContributions === 0) {
         sumContributions = numMovies + numTracks;
-        mostContributions = 
+        mostContributions = users[i].firstName + " " + users[i].lastName;
       }
-      else if (playlistCollection[i].songs.length = sumSongs) {
-      mostSongs = mostSongs + (" and " + playlistCollection[i].title);
+      else if ((numMovies + numTracks) === sumContributions) {
+        mostContributions = mostContributions + " and " + users[i].firstName + " " + users[i].lastName;
+      }
+    }
+    
+    var leastContributions= "";
+    var sumContributions2 = 0;
+    for (let i = 0; i < users.length; i++) {
+      let movies = movieStore.getUserMovies(users[i].id);
+      let numMovies = movies.length;
+      let numTracks = 0;
+      for (let item of movies) {
+        numTracks += item.tracks.length;
+      }
+      if (((numMovies + numTracks) < sumContributions) || sumContributions === 0) {
+        sumContributions = numMovies + numTracks;
+        mostContributions = users[i].firstName + " " + users[i].lastName;
+      }
+      else if ((numMovies + numTracks) === sumContributions) {
+        mostContributions = mostContributions + " and " + users[i].firstName + " " + users[i].lastName;
       }
     }
 
@@ -51,6 +69,7 @@ const accounts = {
       totalTracks: numTracks,
       avgMovies: averageMovies,
       avgTracks: averageTracks,
+      bigContributer: mostContributions,
     };
     response.render('index', viewData);
   },
