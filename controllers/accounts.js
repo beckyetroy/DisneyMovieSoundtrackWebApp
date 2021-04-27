@@ -16,11 +16,13 @@ const accounts = {
     
       // app statistics calculations
       const movies = movieStore.getAllMovies();
+      const users = userstore.getAllUsers();
       let numMovies = movies.length;
       let numTracks = 0;
       for (let item of movies) {
         numTracks += item.tracks.length;
       }
+      let numUsers = users.length;
 
     const viewData = {
       title: 'Disney Movie Soundtracks 101',
