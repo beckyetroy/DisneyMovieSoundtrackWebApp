@@ -46,8 +46,8 @@ const accounts = {
     }
     
     var leastContributions= "";
-    var leastProfilePic = "";
     var sumContributions2 = 0;
+    var leastProfilePic = "";
     for (let i = 0; i < users.length; i++) {
       let movies = movieStore.getUserMovies(users[i].id);
       let numMovies = movies.length;
@@ -57,8 +57,8 @@ const accounts = {
       }
       if (((numMovies + numTracks) < sumContributions2) || sumContributions2 === 0) {
         sumContributions2 = numMovies + numTracks;
-        leastContributions = users[i].firstName + " " + users[i].lastName;
         leastProfilePic = users[i].picture;
+        leastContributions = users[i].firstName + " " + users[i].lastName + " " + '<img src="' + leastProfilePic + '" class="ui circular inline image">';
       }
       else if ((numMovies + numTracks) === sumContributions2) {
         leastContributions = leastContributions + " and " + users[i].firstName + " " + users[i].lastName;
@@ -73,7 +73,6 @@ const accounts = {
       avgTracks: averageTracks,
       bigContributer: mostContributions,
       smallContributer: leastContributions,
-      leastProfilePic: leastProfilePic,
     };
     response.render('index', viewData);
   },
