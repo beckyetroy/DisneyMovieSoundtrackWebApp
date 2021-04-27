@@ -102,11 +102,11 @@ $('#Right5').mouseover(function() {
    });
 
 $('#Right6').mouseover(function() {
-  if ($('#Right6').attr('src') == 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036') {
-    $('#Right6').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2Fpocahontas1.jpg?v=1615742319291');
+  if ($('#Right6').attr('src') == 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Fmovieposter_en.jpg?v=1619555358139') {
+    $('#Right6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Fbrave-ss3.jpg?v=1619555339818');
   }
   else {
-    $('#Right6').attr('src', 'https://cdn.glitch.com/d2abf87c-5b55-4b85-a313-c94daaba6a2c%2FMulan.jpg?v=1615742312036');
+    $('#Right6').attr('src', 'https://cdn.glitch.com/67b9051f-3248-40e3-9a98-56e86a32943f%2Fmovieposter_en.jpg?v=1619555358139');
   }
    });
 
