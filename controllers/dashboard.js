@@ -18,6 +18,7 @@ const dashboard = {
       title: 'Dashboard',
       movies: movieStore.getUserMovies(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
     logger.info('about to render' + viewData.movies);
     response.render('dashboard', viewData);

@@ -51,11 +51,11 @@ const accounts = {
  //register function to render the registration page for adding a new user
   register(request, response) {
     const user = request.body;
-    user.id = uuid();
-    userstore.addUser(user);
+    user.id = uuid(),
+    user.picture = request.files.picture;
     logger.info('registering' + user.email);
     userstore.addUser(user, function() {
-      response.redirect("/dashboard");
+      response.redirect("/start");
     });
   },
   //authenticate function to check user credentials and either render the login page again or the start page.

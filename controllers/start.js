@@ -32,6 +32,7 @@ const start = {
       totalMovies: numMovies,
       totalTracks: numTracks,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
 
     // render the start view and pass through the data

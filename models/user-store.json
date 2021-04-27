@@ -5,14 +5,8 @@
       "lastName": "Troy",
       "email": "beckyetroy@gmail.com",
       "password": "Pepper19!",
-      "id": "1557f41a-a26a-4764-9c46-56e3eac8369f"
-    },
-    {
-      "firstName": "Becky",
-      "lastName": "Troy",
-      "email": "beckyetroy@gmail.com",
-      "password": "Pepper19!",
-      "id": "1557f41a-a26a-4764-9c46-56e3eac8369f"
+      "id": "2dff819f-e0e8-452f-b1cb-88c38a3ff6de",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619537915/ekz4hp5onqihydxjdiqn.jpg"
     }
   ]
 }

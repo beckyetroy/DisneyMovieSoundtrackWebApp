@@ -15,6 +15,7 @@ const movie = {
       title: movieStore.getMovie(movieId).title,
       movie: movieStore.getMovie(movieId),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
     response.render('movie', viewData);
     }
