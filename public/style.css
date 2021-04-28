@@ -314,5 +314,11 @@ th {
 }
 
 #submitFeedback {
-  padding: 1em;
+  padding: 1.25em;
+  background-color: #e6ccff;
+}
+
+.abtBtn {
+  text-align: center;
+  margin-top: 2%;
 }

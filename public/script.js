@@ -172,3 +172,7 @@ const showHideAbout = _ =>
     doubleDown.className = "angle double up icon";
   }
 }
+
+function feedbackThanks() {
+  alert("Thanks for submitting your feedback!");
+}
