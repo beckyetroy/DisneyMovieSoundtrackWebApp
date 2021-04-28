@@ -24,7 +24,7 @@ const editmovie = {
   
    updateTrack(request, response) {
     const movieId = request.params.id;
-    const trackId = request.params.trackId;
+    const trackId = request.params.trackid;
     logger.debug("updating track " + trackId);
     const updatedTrack = {
       title: request.body.title,
