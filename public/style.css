@@ -301,3 +301,18 @@ th {
   background-color: white;
   padding: 1.25em;
 }
+
+.feedback {
+  font-size: 1.1em;
+  text-align: center;
+  padding: 1em;
+  background-color: white;
+  border: 2.5px solid #000066;
+  border-radius: 10px;
+  color: black;
+  font-style: italic;
+}
+
+#submitFeedback {
+  padding: 1em;
+}
