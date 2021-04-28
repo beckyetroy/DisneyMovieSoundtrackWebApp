@@ -147,7 +147,7 @@ p {
   font-size:1.25em;
 }
 
-#addForm label{
+#addForm label, #addTrack label{
   color: white;
 }
 
