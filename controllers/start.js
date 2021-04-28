@@ -34,21 +34,32 @@ const start = {
       var biggestProfilePic = "";
       for (let i = 0; i < movies.length; i++) {
         let numTracks = movies[i].tracks.length;
-        if (numTracks > sumTracks) {
-          sumTracks = numTracks;
-          biggestTrack = movies[i].title;
-          biggestProfilePic = movies[i].picture;
-        }
-        else if ((numTracks === sumTracks) && (numTracks != 0)) {
-          biggestTrack = biggestTrack + " | " + movies[i].title;
-          biggestProfilePic = "";
-        }
-        else if (numTracks === 0) {
+        if (numTracks >= sumTracks) {
           sumTracks = numTracks;
           biggestTrack = movies[i].title;
           biggestProfilePic = movies[i].picture;
         }
       }
+      
+      if (biggestTrack === "") {
+      biggestTrack = "None yet";
+    }
+      
+      var smallestTrack= "";
+      var sumTracks2 = 0;
+      var smallestProfilePic = "";
+      for (let i = 0; i < movies.length; i++) {
+        let numTracks = movies[i].tracks.length;
+        if (numTracks >= sumTracks2) {
+          sumTracks2 = numTracks;
+          smallestTrack = movies[i].title;
+          smallestProfilePic = movies[i].picture;
+        }
+      }
+      
+      if (biggestTrack === "") {
+      biggestTrack = "None yet";
+    }
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
