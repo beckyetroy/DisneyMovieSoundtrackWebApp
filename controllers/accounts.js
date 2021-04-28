@@ -84,6 +84,7 @@ const accounts = {
       title: 'Disney Movie Soundtracks 101',
       totalMovies: numMovies,
       totalTracks: numTracks,
+      totalUsers: numUsers,
       avgMovies: averageMovies,
       avgTracks: averageTracks,
       bigContributer: mostContributions,

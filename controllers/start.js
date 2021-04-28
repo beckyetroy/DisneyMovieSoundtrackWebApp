@@ -57,8 +57,8 @@ const start = {
         }
       }
       
-      if (biggestTrack === "") {
-      biggestTrack = "None yet";
+      if (smallestTrack === "") {
+      smallestTrack = "None yet";
     }
 
     // create view data object (contains data to be sent to the view e.g. page title)
@@ -69,6 +69,8 @@ const start = {
       averageTracks: averageTracks,
       biggestTrack: biggestTrack,
       biggestProfilePic: biggestProfilePic,
+      smallestTrack: smallestTrack,
+      smallestProfilePic: smallestProfilePic,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
       picture: loggedInUser.picture,
     };
