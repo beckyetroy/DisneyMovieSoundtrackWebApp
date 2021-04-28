@@ -147,6 +147,10 @@ p {
   font-size:1.25em;
 }
 
+#addForm label{
+  color: white;
+}
+
 h2 {
   font-family: 'FilmFont', sans-serif;
   font-weight: bold;
