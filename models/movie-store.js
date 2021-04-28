@@ -67,6 +67,7 @@ const movieStore = {
   
   editTrack(id, trackId, updatedTrack) {
     const movie = this.getMovie(id);
+    logger
     const tracks = movie.tracks;
     const index = tracks.findIndex(track => track.id === trackId);
     tracks[index].title = updatedTrack.title;

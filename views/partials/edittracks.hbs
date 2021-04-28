@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     {{#each movie.tracks}}
-    <form class = "ui stacked segment form" action="/editmovie/{{../movie.id}}/updatetrack/{{id}}" method="POST">
+    <form class = "ui stacked segment form" action="/editmovie/{{../movie.id}}/updateTrack/{{id}}" method="POST">
       <tr class="fields">
         <td class="field">
         <span class="ui input">
@@ -38,6 +38,7 @@
         <button class="ui submit icon button"><i class="blue icon save outline"></i></button>
         </td>
       </tr>
+    </form>
     {{/each}}
   </tbody>
 </table>
