@@ -43,12 +43,12 @@ const accounts = {
       for (let item of movies) {
         numTracks += item.tracks.length;
       }
-      if (((numMovies + numTracks) > sumContributions) || sumContributions === 0) {
+      if (((numMovies + numTracks) > sumContributions)) {
         sumContributions = numMovies + numTracks;
         mostContributions = users[i].firstName + " " + users[i].lastName;
         mostProfilePic = users[i].picture;
       }
-      else if (((numMovies + numTracks) === sumContributions) && sumContributions !== 0) {
+      else if (((numMovies + numTracks) === sumContributions) {
         mostContributions = mostContributions + ", " + users[i].firstName + " " + users[i].lastName;
         mostProfilePic = "";
       }
