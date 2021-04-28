@@ -108,7 +108,7 @@ const accounts = {
     user.picture = request.files.picture;
     logger.info('registering' + user.email);
     userstore.addUser(user, function() {
-      response.redirect("/start");
+      response.redirect('/start');
     });
   },
   //authenticate function to check user credentials and either render the login page again or the start page.
