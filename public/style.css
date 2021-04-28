@@ -128,6 +128,20 @@ p {
   background: #6699ff;
 }
 
+.noMovies {
+  font-size: 1.25em;
+  padding:1.25em;
+  background: #e6ccff;
+  width: 98%;
+  margin-left: 1%;
+  border-radius:5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: #000 0px 0px 1.5px;
+  font-style: italic;
+}
+
 #movies, #aboutPage {
   background: rgb(255, 255, 255, 0.5);
 }

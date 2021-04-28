@@ -1,3 +1,9 @@
+{{#unless movies}}
+  <div class="noMovies">No movies yet ... start adding some below!</div>
+{{/unless}}
+
+{{#if movies}}
+
 {{#each movies}}
 <div class="ui card" style="max-width: 100%; min-width: 100%;">
     <div class="content" style="padding: 0;">
@@ -7,7 +13,7 @@
                     <img src="{{picture}}">
                 </div>
                 <div class="content">
-                    <h2>{{title}}</h2>
+                    <h2>{{capitaliseFirstLetter title}}</h2>
                     <div class="description">
                       <a href= "{{imdb}}" class = "imdb" target = "_blank">IMDb</a>
                         <br>
@@ -32,3 +38,4 @@
     </div>
 </div>
 {{/each}}
+{{/if}}
