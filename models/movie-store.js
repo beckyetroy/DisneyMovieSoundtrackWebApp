@@ -73,7 +73,7 @@ const movieStore = {
     tracks[index].singer = updatedTrack.singer;
     tracks[index].genre = updatedTrack.genre;
     tracks[index].youtube = updatedTrack.youtube;
-  }
+  },
 };
 
 module.exports = movieStore;
