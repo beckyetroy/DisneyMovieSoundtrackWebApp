@@ -1,5 +1,14 @@
 {
   "movieCollection": [
-    
+    {
+      "id": "70cb865a-ac97-4e3b-9e11-73fc1627f613",
+      "userid": "b4c13e84-d435-4dd1-8f92-4ac2d26d294d",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619608919/svva5yo7i1prbhv2d1dv.jpg",
+      "title": "Aladdin",
+      "year": "1992",
+      "director": "Ron Clements, Jon Musker",
+      "imdb": "https://www.imdb.com/title/tt0103639/",
+      "tracks": []
+    }
   ]
 }

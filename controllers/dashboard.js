@@ -38,7 +38,7 @@ const dashboard = {
     const newMovie = {
       id: uuid(),
       userid: loggedInUser.id,
-      image: request.files.picture,
+      picture: request.files.picture,
       title: request.body.title,
       year: request.body.year,
       director: request.body.director,
