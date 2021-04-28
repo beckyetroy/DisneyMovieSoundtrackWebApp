@@ -1,7 +1,7 @@
 {{> welcomemenu id="signup"}}
 
 <form class="ui stacked segment form" action="/register" method="POST" enctype="multipart/form-data">
-  <h3 class="ui header">Register</h3>
+  <h3 class="ui header" id = "SignUp">Register</h3>
   <div class="two fields">
     <div class="field">
       <label for="firstName">First Name</label>
@@ -28,5 +28,7 @@
       <label>Image</label>
       <input placeholder="Image" type="file" name="picture" required>
     </div>
+  <div class = "loginregisterbtn">
   <button class="ui blue submit button">Submit</button>
+  </div>
 </form>

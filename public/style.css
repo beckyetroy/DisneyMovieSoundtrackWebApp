@@ -111,6 +111,12 @@ p {
   color: #ffd633;
 }
 
+#readmore a {
+  color: #cceeff;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 #feedback {
   display: none;
   font-size: 0.85em;
@@ -119,6 +125,14 @@ p {
 
 #quote {
   font-size: 0.825em;
+}
+
+#SignUp, #LogIn {
+  text-align: center;
+}
+
+.loginregisterbtn {
+  text-align:center;
 }
 
 .ui.header {
