@@ -36,14 +36,14 @@ app.engine('.hbs', exphbs({
     },
      
      populate: function(genre) {
-    const genres = ["Classical", 'Rock', "Pop", "Disco", "Soul"]
+    const genres = ["Misc", "Show Tune", "Pop", "Rock and Roll", "Jazz", "Classical", "Folk"]
     genres.splice(genres.indexOf(genre), 1)
     let options = ``
     for (let item of genres) {
         options+=`<option value ="${item}">${item}</option>`         
     }    
     return options      
-  }
+    }
   }
 }));
 app.set('view engine', '.hbs');

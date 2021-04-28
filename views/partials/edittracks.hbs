@@ -33,9 +33,9 @@
         </span>
         </td>
         <td colspan = "2" class = "listen">
-          <button class = "ui blue button">
-            <a href ="{{youtube}}" target="_blank">Listen now!</a>
-          </button>
+          <span class="ui input">
+          <input type="url" id="youtube" name="youtube" required oninvalid="this.setCustomValidity('Please link to this song')" oninput="this.setCustomValidity('')" value = "{{youtube}}">
+          </span>
         </td>
       </tr>
     {{/each}}
