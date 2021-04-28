@@ -77,6 +77,46 @@
           "youtube": "https://www.youtube.com/watch?v=TXbHShUnwxY"
         }
       ]
+    },
+    {
+      "id": "688bd9c3-60eb-4488-bfda-481deb4670df",
+      "userid": "b268360f-b1bc-4496-affa-11210bafbac9",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619647456/qpgyyfbronbs9uwkmpg0.jpg",
+      "title": "The Lion King",
+      "date": "2021-04-28T22:04:15.425Z",
+      "year": "1994",
+      "director": "Roger Allens and Rob Minkoff",
+      "imdb": "https://www.imdb.com/title/tt0110357/",
+      "tracks": [
+        {
+          "id": "d190214d-3a17-4363-babd-103a7dacd62b",
+          "title": "The Circle of Life",
+          "singer": "Carmen Twillie",
+          "genre": "Pop",
+          "youtube": "https://www.youtube.com/watch?v=GibiNy4d4gc"
+        },
+        {
+          "id": "969d6ecc-568a-47f9-8a7b-e19a8dc381c7",
+          "title": "be prepared",
+          "singer": "Jeremy Irons",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=zPUe7O3ODHQ"
+        },
+        {
+          "id": "d547b91d-3ae2-4734-ad62-6d71f5fd2fc9",
+          "title": "I just can't wait to be king",
+          "singer": "Jason Weaver",
+          "genre": "Pop",
+          "youtube": "https://www.youtube.com/watch?v=0bGjlvukgHU"
+        },
+        {
+          "id": "e621a8e0-8621-4d05-a394-d4cfcb5072f4",
+          "title": "Hakuna Matata",
+          "singer": "Nathan lane and ernie sabella",
+          "genre": "Reggae",
+          "youtube": "https://www.youtube.com/watch?v=kaOIxll4LCA"
+        }
+      ]
     }
   ]
 }

@@ -51,7 +51,7 @@ const accounts = {
     }
     
     var leastContributions= "";
-    var sumContributions2 = 0;
+    var sumContributions2 = 10000;
     var leastProfilePic = "";
     for (let i = 0; i < users.length; i++) {
       let movies = movieStore.getUserMovies(users[i].id);

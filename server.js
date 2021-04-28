@@ -36,7 +36,7 @@ app.engine('.hbs', exphbs({
     },
      
      populate: function(genre) {
-    const genres = ["Misc", "Show Tune", "Pop", "Rock and Roll", "Jazz", "Classical", "Folk"]
+    const genres = ["Misc", "Show Tune", "Pop", "Rock and Roll", "Jazz", "Classical", "Folk", "Reggae"]
     genres.splice(genres.indexOf(genre), 1)
     let options = ``
     for (let item of genres) {
