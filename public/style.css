@@ -296,3 +296,8 @@ th {
   font-weight:bold;
   text-transform:capitalize;
 }
+
+.head th {
+  background-color: white;
+  padding: 1.25em;
+}

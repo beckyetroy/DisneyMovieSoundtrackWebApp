@@ -16,8 +16,33 @@
           "singer": "Angela Lansbury",
           "genre": "Show Tune",
           "youtube": "https://www.youtube.com/watch?v=uQ0ODCMC6xs"
+        },
+        {
+          "id": "10ac9a36-924a-4fe2-8605-ec86a3351b4b",
+          "title": "Be Our Guest",
+          "singer": "Jerry Orbach",
+          "genre": "Misc",
+          "youtube": "https://www.youtube.com/watch?v=afzmwAKUppU"
+        },
+        {
+          "id": "44278df0-d44b-4090-9b5f-16b36d7dd921",
+          "title": "Gaston",
+          "singer": "Richard White",
+          "genre": "Classical",
+          "youtube": "https://www.youtube.com/watch?v=VuJTqmpBnI0"
         }
       ]
+    },
+    {
+      "id": "0f1b20df-af99-4eb8-9c05-5b5dcaac677c",
+      "userid": "09131ee2-5b58-4365-aab7-122b6681dcb3",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619646681/imq9bqtbuy9cjtu1ntxw.jpg",
+      "title": "The Little Mermaid",
+      "date": "2021-04-28T21:51:20.323Z",
+      "year": "1989",
+      "director": "Ron Clements and Jon Musker",
+      "imdb": "https://www.imdb.com/title/tt0097757/",
+      "tracks": []
     }
   ]
 }
