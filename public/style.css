@@ -27,6 +27,10 @@ body {
   background-color: #ccccff;
 }
 
+.topnav-right {
+  float: right;
+}
+
 .ui.grid {
   border-radius:20px;
 }
