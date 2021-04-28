@@ -9,7 +9,15 @@
       "year": "1992",
       "director": "Ron Clements, Jon Musker",
       "imdb": "https://www.imdb.com/title/tt0116583/",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "f9af3960-f8a9-43e1-8ef8-e181533d7b7d",
+          "title": "Prince Ali",
+          "singer": "Robin Williams",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=aEryAoLfnAA"
+        }
+      ]
     }
   ]
 }
