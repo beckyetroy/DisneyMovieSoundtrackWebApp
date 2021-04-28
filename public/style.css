@@ -296,15 +296,3 @@ th {
   font-weight:bold;
   text-transform:capitalize;
 }
-
-#logInError {
-  background-color: #cccccc;
-  display: none;
-  padding: 0.5em;
-  border: 2.5px solid #cccccc;
-  border-radius: 5px;
-  color: white;
-  font-style: italic;
-  padding-left: 1em;
-  padding-right: 1em;
-}
