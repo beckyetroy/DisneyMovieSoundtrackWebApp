@@ -1,3 +1,9 @@
+{{#unless movie.songs}}
+  <div class="noTracks">It's very quiet in here... start adding some songs!</div>
+{{/unless}}
+
+{{#if movie.tracks}}
+
 <table class="ui stackable yellow striped table">
   <thead>
     <tr>
@@ -32,3 +38,5 @@
     {{/each}}
   </tbody>
 </table>
+<button class = "ui blue button" id ="rate">Rate this soundtrack:</button> <div class="ui huge star rating"></div>
+{{/if}}

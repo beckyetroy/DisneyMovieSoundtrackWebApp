@@ -184,6 +184,16 @@ h3 {
   margin-left: 1%;
 }
 
+.noTracks {
+  font-size: 1.25em;
+  padding:1.15em;
+  background: #cccccc;
+  width: 96%;
+  margin-left: 2%;
+  border-radius:5px;
+  text-align: center;
+}
+
 .btn.div {
   text-align: center;
 }
