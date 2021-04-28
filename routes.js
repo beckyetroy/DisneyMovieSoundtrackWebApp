@@ -9,6 +9,7 @@ const start = require('./controllers/start.js');
 const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
 const movie = require('./controllers/movie.js');
+const editmovie = require('./controllers/movie.js');
 const accounts = require ('./controllers/accounts.js');
 
 // connect routes to controllers
@@ -23,6 +24,7 @@ router.get('/start', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 router.get('/movie/:id', movie.index);
+router.get('/editmovie/:id', movie.index);
 
 router.get('/movie/:id/deleteTrack/:trackid', movie.deleteTrack);
 router.get('/dashboard/:id/deleteMovie', dashboard.deleteMovie);

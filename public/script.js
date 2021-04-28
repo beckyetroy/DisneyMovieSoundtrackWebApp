@@ -172,8 +172,3 @@ const showHideAbout = _ =>
     doubleDown.className = "angle double up icon";
   }
 }
-
-function makeEditable() {
-  $('td').innerHTML 
-  
-}
