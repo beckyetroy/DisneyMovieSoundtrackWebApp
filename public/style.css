@@ -72,6 +72,18 @@ p {
   text-shadow: #000 0px 0px 1.5px;
 }
 
+.stats2 {
+  font-size:1.5em;
+  padding: 0.75em;
+  font-weight: bold;
+  color: white;
+  background-color: #ccccff;
+  border: 5px solid #000066;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: #000 0px 0px 1.5px;
+}
+
 .ui.big.statistic {
   padding-left:1.5em;
   text-shadow: none;
@@ -109,7 +121,7 @@ p {
   padding: 1em;
   color: white;
   text-align: left;
-  font-size: 1em;
+  background: #6699ff;
 }
 
 #movies, #aboutPage {
