@@ -4,17 +4,20 @@
       <th>Song</th>
       <th>Sung by</th>
       <th>Genre</th>
-      <th> </th>
-      <th class = "delete" style="text-align:right;">
-          <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button"> <i class="blue icon save outline"></i></a>
+      <th>Link</th>
+      <th style="text-align:right;">
+        <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button"> <i class="blue icon save outline"></i></a>
       </th>
     </tr>
   </thead>
   <tbody>
     {{#each movie.tracks}}
-      <tr>
-        <td>
-          {{title}}
+    <form class = "ui stacked segment form" action="/editmovie/{{../movie.id}}/updatetrack/{{id}}" method="POST">
+      <tr class="fields">
+        <td class="field">
+        <span class="ui input">
+          <input type="text" name="title" autofocus required oninvalid="this.setCustomValidity('Please enter the Song Title')" placeholder="Title" value = "{{title}}">
+        </span>
         </td>
         <td>
           {{singer}}
@@ -22,7 +25,7 @@
         <td>
           {{genre}}
         </td>
-        <td class = "listen" style="text-align:right;">
+        <td colspan = "2" class = "listen">
           <button class = "ui blue button">
             <a href ="{{youtube}}" target="_blank">Listen now!</a>
           </button>
