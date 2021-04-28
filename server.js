@@ -68,6 +68,10 @@ app.engine('.hbs', exphbs({
         let monthname = months[month];
         return `${dateNum}th ${monthname} (${year})`;
       },
+     
+     uppercase: function(inputString) {
+        return inputString.toUpperCase();
+    },
   }
 }));
 app.set('view engine', '.hbs');

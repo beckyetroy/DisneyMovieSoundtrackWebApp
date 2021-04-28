@@ -46,11 +46,11 @@ const start = {
     }
       
       var smallestTrack= "";
-      var sumTracks2 = 0;
+      var sumTracks2 = 1000;
       var smallestProfilePic = "";
       for (let i = 0; i < movies.length; i++) {
         let numTracks = movies[i].tracks.length;
-        if (numTracks >= sumTracks2) {
+        if (numTracks <= sumTracks2) {
           sumTracks2 = numTracks;
           smallestTrack = movies[i].title;
           smallestProfilePic = movies[i].picture;

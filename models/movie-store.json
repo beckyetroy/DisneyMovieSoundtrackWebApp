@@ -42,7 +42,41 @@
       "year": "1989",
       "director": "Ron Clements and Jon Musker",
       "imdb": "https://www.imdb.com/title/tt0097757/",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "08d08285-6973-44af-b55b-f628d686b5f9",
+          "title": "Part of Your World",
+          "singer": "Jodi benson",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=SXKlJuO07eM"
+        },
+        {
+          "id": "ee9dbff2-e36d-4d05-8aa3-c889611d4dd6",
+          "title": "poor unfortunate souls",
+          "singer": "pat carroll",
+          "genre": "Show Tune",
+          "youtube": "https://www.youtube.com/watch?v=xfkkMHieqcI"
+        }
+      ]
+    },
+    {
+      "id": "592fd0b6-e235-4133-9771-da1ad26f3804",
+      "userid": "09131ee2-5b58-4365-aab7-122b6681dcb3",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619647258/zxuy1rcyghpr9fipair3.jpg",
+      "title": "Sleeping Beauty",
+      "date": "2021-04-28T22:00:58.153Z",
+      "year": "1959",
+      "director": "Clyde Geronimi, Les Clark",
+      "imdb": "https://www.imdb.com/title/tt0053285/",
+      "tracks": [
+        {
+          "id": "6a1ece2e-8463-41f5-a7d0-0e7a0cf6b8ce",
+          "title": "Once Upon a Dream",
+          "singer": "Mary Costa",
+          "genre": "Classical",
+          "youtube": "https://www.youtube.com/watch?v=TXbHShUnwxY"
+        }
+      ]
     }
   ]
 }
