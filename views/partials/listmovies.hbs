@@ -15,11 +15,11 @@
                 <div class="content">
                   <h2>{{capitaliseFirstLetter title}}</h2>
                     <div class="description">
+                      <strong>Created on: </strong>{{formatDate date}}
+                      <br>
                       <a href= "{{imdb}}" class = "imdb" target = "_blank">IMDb</a>
                         <br>
-                        <strong>Year: </strong>{{year}} 
-                        <br>
-                        <strong>Directed by:</strong> {{director}}
+                        <strong>Year: </strong>{{year}} <strong> | Directed by:</strong> {{capitaliseFirstLetter director}}
                         <br>
                       <div class="buttons" id = "movieBtns">
                         <a href="/movie/{{id}}">

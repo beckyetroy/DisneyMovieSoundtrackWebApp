@@ -43,7 +43,31 @@ app.engine('.hbs', exphbs({
         options+=`<option value ="${item}">${item}</option>`         
     }    
     return options      
-    }
+    },
+     
+     formatDate: function(date) {
+        let dateCreated = new Date(date);
+        let dateNum = dateCreated.getDate();
+        let month = dateCreated.getMonth();
+        let year = dateCreated.getFullYear();
+
+        let months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ];
+        let monthname = months[month];
+        return `${dateNum}th ${monthname} (${year})`;
+      },
   }
 }));
 app.set('view engine', '.hbs');

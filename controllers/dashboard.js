@@ -34,12 +34,14 @@ const dashboard = {
   },
   
   addMovie(request, response) {
+    const date = new Date();
     const loggedInUser = accounts.getCurrentUser(request);
     const newMovie = {
       id: uuid(),
       userid: loggedInUser.id,
       picture: request.files.picture,
       title: request.body.title,
+      date: date,
       year: request.body.year,
       director: request.body.director,
       imdb: request.body.imdb,
