@@ -115,6 +115,10 @@ p {
   background-color: #e6ccff;
 }
 
+.item.content {
+  font-size: 1.25em;
+}
+
 #movieBtns {
   text-align:left;
 }
