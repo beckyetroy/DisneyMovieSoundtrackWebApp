@@ -34,6 +34,16 @@ app.engine('.hbs', exphbs({
    }
    return separateWord.join(' ');
     },
+     
+     populate: function(genre) {
+    const genres = ["Classical", 'Rock', "Pop", "Disco", "Soul"]
+    genres.splice(genres.indexOf(genre), 1)
+    let options = ``
+    for (let item of genres) {
+        options+=`<option value ="${item}">${item}</option>`         
+    }    
+    return options      
+  }
   }
 }));
 app.set('view engine', '.hbs');

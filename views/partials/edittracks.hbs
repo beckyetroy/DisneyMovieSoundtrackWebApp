@@ -16,14 +16,21 @@
       <tr class="fields">
         <td class="field">
         <span class="ui input">
-          <input type="text" name="title" autofocus required oninvalid="this.setCustomValidity('Please enter the Song Title')" placeholder="Title" value = "{{title}}">
+          <input type="text" name="title" autofocus required oninvalid="this.setCustomValidity('Please enter the Song Title')" oninput="this.setCustomValidity('')" placeholder="Title" value = "{{title}}">
         </span>
         </td>
         <td>
-          {{singer}}
+          <span class="ui input">
+          <input type="text" name="singer" required oninvalid="this.setCustomValidity('Please include the Singer or input Misc for large groups')" oninput="this.setCustomValidity('')" placeholder="Singer" value = "{{singer}}">
+          </span>
         </td>
         <td>
-          {{genre}}
+         <span class="ui input">
+          <select name="genre" id="genre" style="padding:.6em 2.5em; border:solid lightgray 1px;border-radius:5px;">
+          <option value="{{genre}}" selected="selected">{{genre}}</option>
+          {{{populate genre}}}       
+          </select>       
+        </span>
         </td>
         <td colspan = "2" class = "listen">
           <button class = "ui blue button">
