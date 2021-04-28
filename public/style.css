@@ -186,12 +186,16 @@ h3 {
 
 .noTracks {
   font-size: 1.25em;
-  padding:1.15em;
+  padding:1.25em;
   background: #cccccc;
   width: 96%;
   margin-left: 2%;
   border-radius:5px;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: #000 0px 0px 1.5px;
+  font-style: italic;
 }
 
 .btn.div {
