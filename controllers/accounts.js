@@ -48,8 +48,8 @@ const accounts = {
         mostContributions = users[i].firstName + " " + users[i].lastName;
         mostProfilePic = users[i].picture;
       }
-      else if (((numMovies + numTracks) === sumContributions) {
-        mostContributions = mostContributions + ", " + users[i].firstName + " " + users[i].lastName;
+      else if (((numMovies + numTracks) === sumContributions)) {
+        mostContributions = mostContributions + " | " + users[i].firstName + " " + users[i].lastName;
         mostProfilePic = "";
       }
     }
@@ -64,13 +64,13 @@ const accounts = {
       for (let item of movies) {
         numTracks += item.tracks.length;
       }
-      if (((numMovies + numTracks) < sumContributions2) || sumContributions2 === 0) {
+      if (((numMovies + numTracks) < sumContributions2)) {
         sumContributions2 = numMovies + numTracks;
         leastContributions = users[i].firstName + " " + users[i].lastName;
         leastProfilePic = users[i].picture;
       }
-      else if (((numMovies + numTracks) === sumContributions2) && sumContributions2 !== 0){
-        leastContributions = leastContributions + ", " + users[i].firstName + " " + users[i].lastName;
+      else if (((numMovies + numTracks) === sumContributions2)){
+        leastContributions = leastContributions + " | " + users[i].firstName + " " + users[i].lastName;
         leastProfilePic = "";
       }
     }
