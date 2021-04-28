@@ -105,6 +105,13 @@ p {
   font-size: 0.825em;
 }
 
+.ui.header {
+  padding: 1em;
+  color: white;
+  text-align: left;
+  font-size: 1em;
+}
+
 #movies, #aboutPage {
   background: rgb(255, 255, 255, 0.5);
 }

@@ -12,15 +12,11 @@
       <div class="ui twelve wide column">
         <h1>Disney Movie Soundtracks 101</h1>
         <h1 class="ui header">
-          Hello, {{fullname}}!
+          Hi, {{fullname}}!
         </h1>
-          <p>
-            This app is a fanmade collection of Disney soundtracks, sorted by film. From all the old classics to the latest hits, all of your favourites are here on this site! And the best part? You can add to or edit this collection of soundtracks yourself!
-            <br><br>
-            <i>This application is made for the purpose of a college assignment in a module in Web App Development. I do not own any songs, images, films, or names mentioned on this app. </i>
-          </p>
-        <div class = "stats">The <span id = "title">Disney Soundtracks 101</span> App now has: 
-        <div class="ui big statistic">
+        <div class = "stats">Your stats so far: 
+          <br>
+        <div class="ui big blue statistic">
         <div class="value">
             {{totalMovies}}
         </div>
@@ -28,39 +24,50 @@
             Movies
         </div>
     </div>
-    <div class="ui big statistic">
+    <div class="ui big blue statistic">
         <div class="value">
             {{totalTracks}}
         </div>
         <div class="label">
             Tracks
         </div>
-    </div></div>
-        <br>
-        
-      <div class="buttons">
-        <button class="ui blue button" onclick="showHide()">
-          Get Started <i class="arrow circle down icon" id ="arrowicon"></i>
-        </button>
-        
-        <button class="ui pink button" onclick="feedback()">
-        Send us your Feedback! <i class="comment icon"></i>
-        </button>
-      </div>
-        
-      <br>
-        
-      <p id="readmore">
-            Hit the 'Dashboard' option above to view and edit our collection of soundtracks!
-      </p>  
-        
-      <!-- UI tooltip code found here: https://community.canvaslms.com/t5/Question-Forum/How-do-I-add-a-quot-hover-over-for-definition-quot/m-p/90657#M22876  -->
-        
-      <a class="ui-tooltip" title="Click to hide"> 
-      <p id = "feedback" onclick="hideFeedback()">
-        Click to hide.
-      </p>
-      </a>
+    </div>
+    <div class="ui big blue statistic">
+        <div class="value">
+            {{avgMovies}}
+        </div>
+        <div class="label">
+            Movies <br>per User
+        </div>
+    </div>
+    <div class="ui big blue statistic">
+        <div class="value">
+            {{avgTracks}}
+        </div>
+        <div class="label">
+            Tracks <br>per User
+        </div>
+    </div>
+    <br><br>
+    <div class="ui big blue horizontal statistic">
+        <div class="text value">
+            {{bigContributer}} <img src="{{bigProfilePic}}" class="ui circular inline image">
+        </div>
+        <div class="label" id = "bigContributer">
+            : Our biggest contributor(s)
+        </div>
+    </div>
+          <br>
+    <div class="ui big blue horizontal statistic">
+        <div class="text value">
+            {{smallContributer}} <img src="{{smallProfilePic}}" class="ui circular inline image">
+        </div>
+        <div class="label" id = "smallContributer">
+            : Our smallest contributor(s)
+        </div>
+    </div>
+          
+        </div>
       
         
       </div>
