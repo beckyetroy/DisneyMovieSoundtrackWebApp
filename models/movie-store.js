@@ -69,10 +69,10 @@ const movieStore = {
     const movie = this.getMovie(id);
     const tracks = movie.tracks;
     const index = tracks.findIndex(track => track.id === trackId);
-    songs[index].title = updatedSong.title;
-    songs[index].artist = updatedSong.artist;
-    songs[index].genre = updatedSong.genre;
-    songs[index].duration = updatedSong.duration;
+    tracks[index].title = updatedTrack.title;
+    tracks[index].singer = updatedTrack.singer;
+    tracks[index].genre = updatedTrack.genre;
+    tracks[index].youtube = updatedTrack.youtube;
   }
 };
 
