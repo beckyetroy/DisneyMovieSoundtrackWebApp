@@ -32,7 +32,7 @@ router.get('/dashboard/:id/deleteMovie', dashboard.deleteMovie);
 router.post('/movie/:id/addtrack', movie.addTrack);
 router.post('/dashboard/addmovie', dashboard.addMovie);
 
-router.post('/editmovie/:id/updatetrack/:songid', movie.updateTrack);
+router.post('/editmovie/:id/updatetrack/:songid', editmovie.updateTrack);
 
 // export router module
 module.exports = router;

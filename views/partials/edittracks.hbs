@@ -4,8 +4,9 @@
       <th>Song</th>
       <th>Sung by</th>
       <th>Genre</th>
-      <th>Link</th>
-
+      <th colspan = "2">Link</th>
+    </tr>
+  </thead>
   <tbody>
     {{#each movie.tracks}}
     <form class = "ui stacked segment form" action="/editmovie/{{../movie.id}}/updatetrack/{{id}}" method="POST">
@@ -28,10 +29,13 @@
           </select>       
         </span>
         </td>
-        <td colspan = "2" class = "listen">
+        <td class = "listen">
           <span class="ui input">
           <input type="url" id="youtube" name="youtube" required oninvalid="this.setCustomValidity('Please link to this song')" oninput="this.setCustomValidity('')" value = "{{youtube}}">
           </span>
+        </td>
+        <td>
+        <button class="ui submit icon button"><i class="blue icon save outline"></i></button>
         </td>
       </tr>
     {{/each}}

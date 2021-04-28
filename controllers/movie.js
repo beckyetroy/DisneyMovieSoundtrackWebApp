@@ -43,20 +43,6 @@ const movie = {
     movieStore.addTrack(movieId, newTrack);
     response.redirect('/movie/' + movieId);
   },
-  
-   updateTrack(request, response) {
-    const movieId = request.params.id;
-    const trackId = request.params.trackId;
-    logger.debug("updating track " + trackId);
-    const updatedTrack = {
-      title: request.body.title,
-      singer: request.body.singer,
-      genre: request.body.genre,
-      youtube: request.body.youtube,
-    };
-    movieStore.editTrack(movieId, trackId, updatedTrack);
-    response.redirect('/movie/' + movieId);
-  },
 };
 
 module.exports = movie;
