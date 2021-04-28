@@ -64,6 +64,16 @@ const movieStore = {
     const tracks = movie.tracks;
     _.remove(tracks, { id: trackId});
   },
+  
+  editTrack(id, trackId, updatedTrack) {
+    const movie = this.getMovie(id);
+    const tracks = movie.tracks;
+    const index = tracks.findIndex(track => track.id === trackId);
+    songs[index].title = updatedSong.title;
+    songs[index].artist = updatedSong.artist;
+    songs[index].genre = updatedSong.genre;
+    songs[index].duration = updatedSong.duration;
+  }
 };
 
 module.exports = movieStore;
