@@ -1,9 +1,3 @@
-{{#unless movie.tracks}}
-  <div class="noTracks">No tracks yet ... start adding some below!</div>
-{{/unless}}
-
-{{#if movie.tracks}}
-
 <table class="ui stackable yellow striped table">
   <thead>
     <tr>
@@ -11,7 +5,9 @@
       <th>Sung by</th>
       <th>Genre</th>
       <th> </th>
-      <th> </th>
+      <th class = "delete" style="text-align:right;">
+          <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button"> <i class="blue icon save outline"></i></a>
+      </th>
     </tr>
   </thead>
   <tbody>
@@ -31,12 +27,7 @@
             <a href ="{{youtube}}" target="_blank">Listen now!</a>
           </button>
         </td>
-        <td class = "delete" style="text-align:right;">
-          <a href="/movie/{{../movie.id}}/deletetrack/{{id}}" class="ui icon button deltrack"> <i class="blue icon trash"></i></a>
-        </td>
       </tr>
     {{/each}}
   </tbody>
 </table>
-<button class = "ui blue button" id ="rate">Rate this soundtrack:</button> <div class="ui huge star rating"></div>
-{{/if}}
