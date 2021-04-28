@@ -270,6 +270,10 @@ tr {
   cursor: pointer;
 }
 
+th {
+  text-align: center;
+}
+
 #Contact td {
   border: 2px solid #e6ccff;
   background-color: white;
