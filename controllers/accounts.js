@@ -25,7 +25,13 @@ const accounts = {
     
       let numUsers = users.length;
       let averageMovies = numMovies/numUsers;
+      if (isNaN(averageMovies)) {
+        averageMovies = 0;
+      }
       let averageTracks = numTracks/numUsers;
+      if (isNaN(averageTracks)) {
+        averageTracks = 0;
+      }
     
     var mostContributions= "";
     var sumContributions = 0;
@@ -68,6 +74,15 @@ const accounts = {
         leastProfilePic = "";
       }
     }
+    
+    if (mostContributions === "") {
+      mostContributions = "No one yet";
+    }
+    
+    if (leastContributions === "") {
+      leastContributions = "No one yet";
+    }
+
 
     const viewData = {
       title: 'Disney Movie Soundtracks 101',
@@ -108,6 +123,8 @@ const accounts = {
     user.picture = request.files.picture;
     logger.info('registering' + user.email);
     userstore.addUser(user, function() {
+      response.cookie('movie', user.email);
+      logger.info('logging in' + user.email);
       response.redirect('/start');
     });
   },
