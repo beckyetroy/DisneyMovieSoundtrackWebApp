@@ -15,15 +15,39 @@ const start = {
     // display confirmation message in log
     logger.info('start rendering');
     
-    if(loggedInUser){
-      logger.info('test');
-    
+    if(loggedInUser){    
       // app statistics calculations
-      const movies = movieStore.getAllMovies();
+      const movies = movieStore.getUserMovies(loggedInUser.id);
       let numMovies = movies.length;
       let numTracks = 0;
       for (let item of movies) {
         numTracks += item.tracks.length;
+      }
+      
+      let averageTracks = numTracks/numMovies;
+      if (isNaN(averageTracks)) {
+        averageTracks = 0;
+      }
+      
+      var biggestTrack= "";
+      var sumTracks = 0;
+      var biggestProfilePic = "";
+      for (let i = 0; i < movies.length; i++) {
+        let movies = movieStore.getUserMovies(users[i].id);
+        let numMovies = movies.length;
+        let numTracks = 0;
+        for (let item of movies) {
+          numTracks += item.tracks.length;
+        }
+        if (((numMovies + numTracks) > sumContributions)) {
+          sumContributions = numMovies + numTracks;
+          mostContributions = users[i].firstName + " " + users[i].lastName;
+          mostProfilePic = users[i].picture;
+        }
+        else if (((numMovies + numTracks) === sumContributions)) {
+          mostContributions = mostContributions + " | " + users[i].firstName + " " + users[i].lastName;
+          mostProfilePic = "";
+        }
       }
 
     // create view data object (contains data to be sent to the view e.g. page title)
@@ -31,6 +55,7 @@ const start = {
       title: 'Disney Soundtracks 101',
       totalMovies: numMovies,
       totalTracks: numTracks,
+      averageTracks: averageTracks,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
       picture: loggedInUser.picture,
     };
