@@ -48,9 +48,14 @@ const accounts = {
         mostContributions = users[i].firstName + " " + users[i].lastName;
         mostProfilePic = users[i].picture;
       }
-      else if (((numMovies + numTracks) === sumContributions)) {
+      else if (((numMovies + numTracks) === sumContributions) && ((numMovies + numTracks) != 0)) {
         mostContributions = mostContributions + " | " + users[i].firstName + " " + users[i].lastName;
         mostProfilePic = "";
+      }
+      else if ((numMovies + numTracks) === 0) {
+        sumContributions = numMovies + numTracks;
+        mostContributions = users[i].firstName + " " + users[i].lastName;
+        mostProfilePic = users[i].picture;
       }
     }
     
@@ -69,9 +74,14 @@ const accounts = {
         leastContributions = users[i].firstName + " " + users[i].lastName;
         leastProfilePic = users[i].picture;
       }
-      else if (((numMovies + numTracks) === sumContributions2)){
+      else if (((numMovies + numTracks) === sumContributions2) && ((numMovies + numTracks) != 0)){
         leastContributions = leastContributions + " | " + users[i].firstName + " " + users[i].lastName;
         leastProfilePic = "";
+      }
+      else if ((numMovies + numTracks) === 0) {
+        sumContributions = numMovies + numTracks;
+        mostContributions = users[i].firstName + " " + users[i].lastName;
+        mostProfilePic = users[i].picture;
       }
     }
     

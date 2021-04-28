@@ -33,20 +33,20 @@ const start = {
       var sumTracks = 0;
       var biggestProfilePic = "";
       for (let i = 0; i < movies.length; i++) {
-        let movies = movieStore.getUserMovies(users[i].id);
-        let numMovies = movies.length;
-        let numTracks = 0;
-        for (let item of movies) {
-          numTracks += item.tracks.length;
+        let numTracks = movies[i].tracks.length;
+        if (numTracks > sumTracks) {
+          sumTracks = numTracks;
+          biggestTrack = movies[i].title;
+          biggestProfilePic = movies[i].picture;
         }
-        if (((numMovies + numTracks) > sumContributions)) {
-          sumContributions = numMovies + numTracks;
-          mostContributions = users[i].firstName + " " + users[i].lastName;
-          mostProfilePic = users[i].picture;
+        else if ((numTracks === sumTracks) && (numTracks != 0)) {
+          biggestTrack = biggestTrack + " | " + movies[i].title;
+          biggestProfilePic = "";
         }
-        else if (((numMovies + numTracks) === sumContributions)) {
-          mostContributions = mostContributions + " | " + users[i].firstName + " " + users[i].lastName;
-          mostProfilePic = "";
+        else if (numTracks === 0) {
+          sumTracks = numTracks;
+          biggestTrack = movies[i].title;
+          biggestProfilePic = movies[i].picture;
         }
       }
 
@@ -56,6 +56,8 @@ const start = {
       totalMovies: numMovies,
       totalTracks: numTracks,
       averageTracks: averageTracks,
+      biggestTrack: biggestTrack,
+      biggestProfilePic: biggestProfilePic,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
       picture: loggedInUser.picture,
     };
