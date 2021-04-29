@@ -176,3 +176,5 @@ const showHideAbout = _ =>
 function feedbackThanks() {
   alert("Thanks for submitting your feedback!");
 }
+
+$("#savechanges").click(() => confirm("Are you sure you'd like to save your changes?"));
