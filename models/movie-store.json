@@ -117,6 +117,25 @@
           "youtube": "https://www.youtube.com/watch?v=kaOIxll4LCA"
         }
       ]
+    },
+    {
+      "id": "023f0b50-b6c5-4211-a3c0-d6a8f347619b",
+      "userid": "6d8854b6-45c5-469c-bbde-6a388522c56a",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1620134415/koc1gz6syhamvfwfdaxs.jpg",
+      "title": "The Hunchback of Notre Dame",
+      "date": "2021-05-04T13:20:15.599Z",
+      "year": "1996",
+      "director": "Gary Trousdale and Kirk Wise",
+      "imdb": "https://www.imdb.com/title/tt0116583/",
+      "tracks": [
+        {
+          "id": "463d6a53-a619-4fcb-91e6-aa00cd4bd481",
+          "title": "heLLfIRE",
+          "singer": "Jerry Orback",
+          "genre": "Rock and Roll",
+          "youtube": "https://www.youtube.com/watch?v=aEryAoLfnAA"
+        }
+      ]
     }
   ]
 }

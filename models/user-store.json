@@ -15,6 +15,14 @@
       "password": "Abc123",
       "id": "09131ee2-5b58-4365-aab7-122b6681dcb3",
       "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1619645676/yuotkdwnftubiiskosuq.jpg"
+    },
+    {
+      "firstName": "Joe",
+      "lastName": "Bloggs",
+      "email": "jbloggs@gmail.com",
+      "password": "Trustno1",
+      "id": "6d8854b6-45c5-469c-bbde-6a388522c56a",
+      "picture": "http://res.cloudinary.com/beckyetroy/image/upload/v1620134373/nwevlri06d0x9dfiaxjy.jpg"
     }
   ]
 }
